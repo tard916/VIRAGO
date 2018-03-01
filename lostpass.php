@@ -17,7 +17,7 @@
   <div class="form">
       
       <ul class="tab-group">
-        <li class="tab active login"><a href="#signup">SIGN IN</a></li>
+        <li class="tab active login"><a href="#signup">Forget Password</a></li>
         
       </ul>
       
@@ -31,23 +31,13 @@
                 Email <span class="req">*</span>
               </label>
               <input type="email" required autocomplete="off"/>
-            </div>
+            </div>           
+           
             
-            <div class="field-wrap">
-              <label>
-                Password<span class="req">*</span>
-              </label>
-              <input type="password"required autocomplete="off"/>
-            </div>            
-            
-            <button type="submit" class="button button-block"/>SIGN IN</button>
+            <button type="submit" class="button button-block"/>SEND</button>
             <a href="index.php" class="button btn-cancel ">CANCEL</a>
 
-          </form>
-
-          <hr>
-          <span class="Fpass">Forgot password?<a href="lostpass.php">Click Here</a></span>
-          <span class="Nuser">New User?<a href="signUp.php">Click Here</a></span>
+          </form>    
           
 
         </div>

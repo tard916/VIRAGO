@@ -32,14 +32,14 @@
                 <label>
                   First Name<span class="req">*</span>
                 </label>
-                <input type="text" required autocomplete="off" />
+                <input type="text" name="firstName" required autocomplete="off" />
               </div>
           
               <div class="field-wrap">
                 <label>
                   Last Name<span class="req">*</span>
                 </label>
-                <input type="text" required autocomplete="off"/>
+                <input type="text" name="lastName" required autocomplete="off"/>
               </div>
             </div>
 
@@ -47,45 +47,45 @@
               <label>
                 Email <span class="req">*</span>
               </label>
-              <input type="email" required autocomplete="off"/>
+              <input type="email" name="email" required autocomplete="off"/>
             </div>
             
             <div class="field-wrap">
               <label>
                 Password<span class="req">*</span>
               </label>
-              <input type="password"required autocomplete="off"/>
+              <input type="password" name="password" required autocomplete="off"/>
             </div>
 
             <div class="field-wrap">
               <label>
                 Confirm Password<span class="req">*</span>
               </label>
-              <input type="password"required autocomplete="off"/>
+              <input type="password" name="cPassword" required autocomplete="off"/>
             </div>
 
             <div class="field-wrap">
               <label>
                 Address<span class="req">*</span>
               </label>
-              <input type="text"required autocomplete="off"/>
+              <input type="text" name="address" required autocomplete="off"/>
             </div>
 
             <div class="field-wrap">
               <label>
                 Phone Number<span class="req">*</span>
               </label>
-              <input type="password"required autocomplete="off"/>
+              <input type="text" name="phone" required autocomplete="off"/>
             </div>
 
             <div class="field-wrap">
               <label>
                 Specialty<span class="req">*</span>
               </label>
-              <input type="text"required autocomplete="off"/>
+              <input type="text" name="specialty" required autocomplete="off"/>
             </div>
             
-            <button type="submit" class="button button-block"/>SIGN UP</button>
+            <button type="submit" name="submit" class="button button-block"/>SIGN UP</button>
             <a href="index.php" class="button btn-cancel ">CANCEL</a>
 
           </form>
@@ -102,14 +102,14 @@
               <label>
                 First Name<span class="req">*</span>
               </label>
-              <input type="text" required autocomplete="off" />
+              <input type="text" name="firstName1" required autocomplete="off" />
             </div>
         
             <div class="field-wrap">
               <label>
                 Last Name<span class="req">*</span>
               </label>
-              <input type="text" required autocomplete="off"/>
+              <input type="text" name="lastName1" required autocomplete="off"/>
             </div>
           </div>
 
@@ -117,35 +117,35 @@
             <label>
               Email <span class="req">*</span>
             </label>
-            <input type="email" required autocomplete="off"/>
+            <input type="email" name="email1" required autocomplete="off"/>
           </div>
           
           <div class="field-wrap">
             <label>
               Password<span class="req">*</span>
             </label>
-            <input type="password" required autocomplete="off"/>
+            <input type="password" name="password1" required autocomplete="off"/>
           </div>
 
           <div class="field-wrap">
             <label>
               Confirm Password<span class="req">*</span>
             </label>
-            <input type="password" required autocomplete="off"/>
+            <input type="password" name="cPassword1" required autocomplete="off"/>
           </div>
 
           <div class="field-wrap">
             <label>
               Address<span class="req">*</span>
             </label>
-            <input type="text" required autocomplete="off"/>
+            <input type="text" name="address1" required autocomplete="off"/>
           </div>
 
           <div class="field-wrap">
             <label>
               Phone Number<span class="req">*</span>
             </label>
-            <input type="password" required autocomplete="off"/>
+            <input type="text" name="phone1" required autocomplete="off"/>
           </div>
 
           
