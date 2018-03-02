@@ -8,6 +8,7 @@
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/styleSignUp.css">
+  
 
   
 </head>
@@ -25,21 +26,21 @@
         <div id="signup">   
           <h1>Sign Up As Job Seekers</h1>
           
-          <form action="/" method="post">
-          
+          <form action="BackEnd_Script/viragoReistration.php" method="post" name="JobSeekers" autocomplete="off">
+
             <div class="top-row">
               <div class="field-wrap">
                 <label>
                   First Name<span class="req">*</span>
                 </label>
-                <input type="text" name="firstName" required autocomplete="off" />
+                <input id="fname" type="text" name="firstName"  autocomplete="off" />
               </div>
           
               <div class="field-wrap">
                 <label>
                   Last Name<span class="req">*</span>
                 </label>
-                <input type="text" name="lastName" required autocomplete="off"/>
+                <input id="lname" type="text" name="lastName"  autocomplete="off"/>
               </div>
             </div>
 
@@ -47,45 +48,45 @@
               <label>
                 Email <span class="req">*</span>
               </label>
-              <input type="email" name="email" required autocomplete="off"/>
+              <input id="email" type="email" name="email"  autocomplete="off"/>
             </div>
             
             <div class="field-wrap">
               <label>
                 Password<span class="req">*</span>
               </label>
-              <input type="password" name="password" required autocomplete="off"/>
+              <input id="pass" type="password" name="password"  autocomplete="off"/>
             </div>
 
             <div class="field-wrap">
               <label>
                 Confirm Password<span class="req">*</span>
               </label>
-              <input type="password" name="cPassword" required autocomplete="off"/>
+              <input id="cpass" type="password" name="cPassword"  autocomplete="off"/>
             </div>
 
             <div class="field-wrap">
               <label>
                 Address<span class="req">*</span>
               </label>
-              <input type="text" name="address" required autocomplete="off"/>
+              <input id="addr" type="text" name="address"  autocomplete="off"/>
             </div>
 
             <div class="field-wrap">
               <label>
                 Phone Number<span class="req">*</span>
               </label>
-              <input type="text" name="phone" required autocomplete="off"/>
+              <input id="Phn" type="text" name="phone"  autocomplete="off"/>
             </div>
 
             <div class="field-wrap">
               <label>
                 Specialty<span class="req">*</span>
               </label>
-              <input type="text" name="specialty" required autocomplete="off"/>
+              <input id="speci" type="text" name="specialty"  autocomplete="off"/>
             </div>
             
-            <button type="submit" name="submit" class="button button-block"/>SIGN UP</button>
+            <button type="submit" name="jobSeeker_submit" class="button button-block"/>SIGN UP</button>
             <a href="index.php" class="button btn-cancel ">CANCEL</a>
 
           </form>
@@ -95,7 +96,7 @@
         <div id="login">   
           <h1>Sign Up As CLIENT</h1>
           
-          <form action="/" method="post">
+          <form action="BackEnd_Script/viragoReistration.php" method="post">
           
             <div class="top-row">
             <div class="field-wrap">
@@ -149,7 +150,7 @@
           </div>
 
           
-          <button class="button button-block"/>SIGN UP</button>
+          <button class="button button-block" name="client_submit" />SIGN UP</button>
           <a href="index.php" class="button btn-cancel ">CANCEL</a>
           
           </form>
