@@ -22,11 +22,11 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/custome.css" rel="stylesheet"> 
+    <link href="css/custome.css" rel="stylesheet">
 
     <script src="js/ie-emulation-modes-warning.js"></script>
 
-   
+
   </head>
 
   <body>
@@ -46,9 +46,9 @@
           <ul class="nav navbar-nav navbar-right">
             <li ><a href="#wo_we_are">About us</a></li>
             <li><a href="#get-involved">How you can Help</a></li>
-            <li><a href="#get-involved">Donation</a></li>
-            <li><a href="signUp.php">SIGN UP</a></li>
-            <li><a href="login.php">SIGN IN</a></li>
+            <li><a href="#get-involved">Donations</a></li>
+            <li><a href="signUp.php">Sign Up</a></li>
+            <li><a href="login.php">Sign In</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -57,19 +57,20 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Our goal is to inspire <br/> Young programmers to write better codes.</h1>
+        <h1>Our goal is to impact lives<br/> and transform the community for the better.</h1>
         <p>We belive that  the <strong> Success is no accident, </strong> it can be reached only <br/>through <strong> Hard Work, perseverance and learning.</strong> We will provide you with the basement to get you started.</p>
         <p><a class="btn btn-danger btn-lg" href="info.php" role="button">Learn more &raquo;</a></p>
-        <h1 style="text-align: center;">224 Coding</h1>
       </div>
     </div>
     <div id="wo_we_are">
       <div class="container home-page">
-        <img src="rec/logo/logo.png" alt="224 coding" title="224 Coding Logo">
-        <h2>Who We Are</h2>
+        <img src="rec/icon.png" alt="VIRAGO" title="VIRAGO Logo">
         <hr>
         <p>
-          We are <a href="http://www.224tech.com" target="_blank"> 224 Tech</a>, We aim to improve seducation throught both method - effective project-based learning - and material - by teaching skills that are applicable to inproving your life today.
+        <h2>Who Are We?</h2>
+        <hr>
+        <p>
+          At Virago, we aim to provide a platform to connect a wiling<br>community to a wide range of services and vice versa!
         </p>
       </div>
     </div>
@@ -79,49 +80,50 @@
         <h2>Get Involved</h2>
         <hr>
         <div class="row">
+
           <div class="col-md-4">
-            
+
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-male fa-stack-1x fa-inverse"></i>
             </span>
-            <h3>STUDENTS</h3>
-            <p>Want to learn how to code? Want to help us get to 1,000,000 lines? Click the button below and we'll let you know how to get involved.</p>
-            <p><a class="btn btn-default" href="#" role="button">Start Learning &raquo;</a></p>
+            <h3>POST JOBS</h3>
+            <p>Have something that needs doing? Post it to our marketplace that match you with skilled people</p>
+            <p><a class="btn btn-default" href="#" role="button">Sign up&raquo;</a></p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
             </span>
-            <h3>EDUCATOR</h3>
-            <p>Want to bring this initiative to your school or institution? Awesome! Click the button below and we'll let make it happen.</p>
-            <p><a class="btn btn-default" href="#" role="button">Join The Initiative &raquo;</a></p>
+            <h3>MANAGE JOBS</h3>
+            <p>Already on our plaform? Click the button below to create, view and manage jobs</p>
+            <p><a class="btn btn-default" href="#" role="button">Sign in now &raquo;</a></p>
          </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-money fa-stack-1x fa-inverse"></i>
             </span>
-            <h3>SPONSORS</h3>
-            <p>We love all the support we get to help host more events, and empower more lives with the knoledge of coding. Click to get involved.</p>
+            <h3>DONATE</h3>
+            <p>A little  token can go a long way in the improvement of lives and overall coditions in the community</p>
             <p><a class="btn btn-default" href="#" role="button">Give Support &raquo;</a></p>
           </div>
-         
+
         </div>
         </div> <!-- /container -->
       </div>
 
-     
+
 
       <footer>
         <div class="container">
-          <span><img src="rec/logo/favicon.png" width="75px;" height="75px;"></span><p class="pull-right">&copy; 2017 224 Coding</p> 
+          <span><img src="rec/logo/favicon.png" width="75px;" height="75px;"></span><p class="pull-right">&copy; 2018 224 Coding</p>
 
         </div>
-        
+
       </footer>
-    
+
 
 
     <!-- Bootstrap core JavaScript
