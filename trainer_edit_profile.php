@@ -135,7 +135,7 @@
                 </a>
               </li>
               <li class="menu-spacing">
-               <a href="trainer_rec_session.php">
+               <a href="listAJob.php">
                  <i class="	glyphicon glyphicon-plus-sign"></i>
                    Post a Job
                </a>

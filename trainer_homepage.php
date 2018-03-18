@@ -174,16 +174,10 @@
             <div class="row inner-row-content">
               <?php
 
-<<<<<<< HEAD
+
                   $client = $_SESSION['user_ID'];
-                  $result = $con->query("SELECT * FROM jobs WHERE CL_UniqueID = '$client'");
-=======
-
-
+                  
                   $result = $con->query("SELECT * FROM jobs WHERE CL_UniqueID = '$client'  ORDER BY id");
->>>>>>> 5440265d8f26b9b38b47d5ddead2fc094adeb5cf
-
-
                  foreach ($result as $key => $rs) {
 
               ?>
