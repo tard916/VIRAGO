@@ -2,7 +2,7 @@
   error_reporting(0);
   session_start();
   include("BackEnd_Script/DBconfig.php");
-  
+
   if ( $_SESSION['checkLoginTrainer'] != '1') {
 
           echo '<script language = "javascript">';
@@ -58,7 +58,7 @@
             </button>
             <!--logo button of the website on the top left corner-->
             <a  href="trainer_homepage.php">
-              <image src="symbol/logoimg1.png" alt="img_logo" id="img_logo_trainer">
+              <image src="rec/virago.png" alt="img_logo" id="img_logo_trainer">
             </a>
           </div>
           <div id="navbar" class="collapse navbar-collapse ">
@@ -89,7 +89,7 @@
                 $result = mysqli_query($con,$sql);
                 $row = mysqli_fetch_array($result);
                 $image = $row['name'];
-                
+
                 if (!empty($image)) {
 
                   $image_src = "symbol/profilePic/".$image;
@@ -99,7 +99,7 @@
                   $image_src = "symbol/profilePic/default.png";
                 }
               ?>
-              
+
 
             <!--Image of the user-->
             <img src="<?php echo $image_src;?>" class="img-responsive img-circle" alt="User Profile image">
@@ -153,7 +153,7 @@
                 <a href="#pageSubmenu" >
                   <i class="glyphicon glyphicon-duplicate"></i>
                     View Job History
-                </a>                
+                </a>
               </li>
             </ul>
         </nav>
@@ -175,7 +175,7 @@
               <?php
 
 
-                  
+
                   $result = $con->query("SELECT * FROM jobs WHERE CL_UniqueID = '$client'  ORDER BY id");
 
 
@@ -184,12 +184,12 @@
               ?>
               <div class="col-md-4 col-lg-4 popout content-layout">
                 <h2><?php echo $rs["jobTitel"];?> </h2>
-                <h4 class="id"> ID: <?php echo $rs["JB_UniqueID"];?></h4>              
+                <h4 class="id"> ID: <?php echo $rs["JB_UniqueID"];?></h4>
                 <p>Date: <?php echo $rs["stDate"].' TO';?> <span><?php echo $rs["edDate"];?></span> </P>
                 <p>Time: <?php echo $rs["stTime"].' TO';?> <span><?php echo $rs["edTime"];?></span> </P>
                 <p>Fee: <?php echo 'RM'.$rs["price"];?></p>
                 <p>Status: <?php echo $rs["status"];?></p>
-                
+
 
               </div>
               <?php
@@ -197,7 +197,7 @@
             }
               ?>
 
-              
+
             </div>
             <footer class="footer-hide-show">
               <div class= "row">

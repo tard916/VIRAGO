@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>About Jinjang Utara</title>
+    <title>Literacy and Numeracy Programme</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -75,15 +75,15 @@
           <img class="first-slide" src="rec/jinjang_1.jpeg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Literacy and Numeracy Programme</h1>
-              <p>Education has an important role to play in the eradication of poverty. Unfortunately for many families living in poverty, education is a luxury they cannot afford.
+              <h1>About the Jinjang Utara Community</h1>
+              <p>The entire housing was built on the city’s landfilled rubbish dump. It is currently notorious for the high crime rate, drug abuse, gang fights and conflicts.
               To read about this and more, click the button below</p>
-              <p><a class="btn btn-lg btn-primary" href="info_literacy.php" role="button">Read More</a></p>
+              <p><a class="btn btn-lg btn-primary" href="info.php" role="button">Read More</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <img class="second-slide" src="rec/jinjang_2.jpeg" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
@@ -124,12 +124,19 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">About Jinjang Utara <span class="text-muted"></span></h2>
-          <p class="lead">The entire housing was built on the city’s landfilled rubbish dump. It is currently notorious for the high crime rate, drug abuse, gang fights and conflicts. A harbor for drug addicts, alcoholics, gangsters, prostitutes and petty criminals.
-Jinjang Utara is littered with dilapidated rumah transit (supposed to be temporary housing). Currently, housing more than 2000 people. These are forgotten people who became disillusioned and embittered. The inhabitants waited for 40 years to date, to be relocated to their new residence under Projek Perumahan (PPR) which has yet to happen. This is 38 years later than the promised duration by the government. Even if they are offered low cost housing tomorrow, they will not be able to afford it as they can hardly afford the RM40 per month rent even now. The average combined income per month for each family is less than RM1000.</p>
+          <h2 class="featurette-heading">Education has an important <span class="text-muted"> role to play in the eradication of poverty.</span></h2>
+          <p class="lead"> Unfortunately for many families living in poverty, education is a luxury they cannot afford. This is a great tragedy, as education should be a basic human right that must be met.
+
+The effects of poverty had resulted in some children growing up in poverty stricken homes, suffering more frequent and persistent health problems compared to children who grow up under better financial circumstances. Children raised under poverty noticeably, tend to miss school more often because of illness, level of stress at home, lack of child- care facilities, and unfortunately, sometimes, violence at home. <br>As our nation progresses, there needs to be intervention programmes for the poor to ensure they are not left behind.
+Even though schooling is free here in Malaysia, those who live in poverty still cannot afford to pay for their children’s miscellaneous fees such as activities, textbooks and uniforms, and their meals. Now in this age and era, each child needs a computer, and these items that we take for granted are not cheap for those who are destitute.
+
+Sadly, those who are destitute would rather send their children out to work, so that they can earn a living to support their parents and siblings. <br>These children should remain in school, as it is proven that each year they remain in school their earning potential increases by 10-20%.
+
+English may not be the most spoken language in the world, but it remains as the dominant language for business and has become almost a necessity for people to enter a global workforce. Its importance in the global market place therefore cannot be understated, as learning English really can change lives.
+</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="rec/jinjang_1.jpeg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="rec/jinjang_4.jpeg" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -137,33 +144,21 @@ Jinjang Utara is littered with dilapidated rumah transit (supposed to be tempora
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">The integrity of the rumah transit<span class="text-muted"> is questionable because they were not built to last.</span></h2>
-          <p class="lead">This poses a health and safety hazard for the family staying under the roof of each unit. The occupants have grown over the years to include three generations with an average of ten people in each unit. Each unit is cramped in a 480-square-feet space for the entire family of over 10 pax each.
+          <h2 class="featurette-heading">Hence, the literacy project was<span class="text-muted"> launched in December 2014, giving opportunities for the resident children </span></h2>
+          <p class="lead">to unlock their full potential and find meaningful careers in the future.
+          The children in the Jinjang community are especially weak in the foundational subjects of English, Maths and Science. The Maths Numeracy Project for the children from Jinjang Utara then followed suit in early 2017.
+          We are committed to do what we can to improve the literacy and numeracy skills of those who are left behind.
 
-The children in Jinjang Utara have been growing up in a poverty stricken environment. Some were abandoned by their parents or are neglected in an environment of abject poverty. Violence is rampant in this place. Teenagers are at risk of being recruited by gangs. With their home so broken and crowded, the teenagers have no place to turn to. The gangs offered financial and communal support/relief, including a sense of belonging.</p>
+  Although some supporters have donated generously each year to charity, the needs of the poor cannot all be met. There are only so much we can do. Many households in destitute require financial aid for many things including tuition and remedial classes for subjects that they are weak in.
+
+  This is a small project, but one that must continue and sustain itself, so that it will have a greater impact on these children’s lives. We encourage you to join us in our effort in uplifting our communities and making a difference in their lives. It stems from a simple conviction that we all share, that every child and every life matters, for our community and for the future of our nation.
+
+   “Life is not a competition. Life is about helping and inspiring others, so we can reach our full potential”</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="rec/jinjang_2.jpeg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="rec/jinjang_5.jpeg" alt="Generic placeholder image">
         </div>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Jonathan Ambalagan and Mary Ramamoothy<span class="text-muted"> started the community work and have been reaching out to the children of Jinjang Utara</span></h2>
-          <p class="lead"> for the past 17 years. It is their life mission to see the community transformed and changed through helping the children - one child at a time. The chief focus is on education and social concern activities. They conduct weekly outdoor activities to instill moral values in children. Over 100 children attend their session every week. Over the years, many of these children have progressed to complete their secondary education. Few are even completing their college education through the sponsorship of kind benefactors like HELP Education Group. Jonathan and Mary make home visits weekly to know each family’s respective needs. In the process, they are supporting some of the families’ need such as education (school bus), groceries, school supplies, etc. Because of the financial burden, many of these children are undernourished and some are even deprived of food for many days. They then have to survive on occasional leftovers offered by kind neighbors.
-
-The children are constantly subjected to danger of bad influence, perversion and exploitation daily under such conditions. Occasionally, Jonathan and Mary will be called for counselling, as the men are thrown in jail, taken into drug rehab, youths arrested for fights or drug possession, etc. The work is immense with never ending challenges.
-Update in 2018:
-The low cost housing flats built for this community has since been open for the families to move in. However, the families are still finding it difficult to afford the lease, as in comparison to the rental they used to pay for the Rumah Panjang, this is significantly more costly.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="rec/jinjang_3.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
 
@@ -171,7 +166,7 @@ The low cost housing flats built for this community has since been open for the 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2018 224 Coding. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
