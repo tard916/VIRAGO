@@ -40,7 +40,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand " href="#"><span>  VIRAGO</span></a>
+          <a class="navbar-brand " href="#"><span>  Virago</span></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -64,7 +64,7 @@
     </div>
     <div id="wo_we_are">
       <div class="container home-page">
-        <img src="rec/icon.png" alt="VIRAGO" title="VIRAGO Logo">
+        <img src="rec/icon_smaller.png" alt="VIRAGO" title="VIRAGO Logo">
         <hr>
         <p>
         <h2>Who Are We?</h2>
@@ -88,8 +88,8 @@
               <i class="fa fa-male fa-stack-1x fa-inverse"></i>
             </span>
             <h3>POST JOBS</h3>
-            <p>Have something that needs doing? Post it to our marketplace that match you with skilled people</p>
-            <p><a class="btn btn-default" href="#" role="button">Sign up&raquo;</a></p>
+            <p>Have something that needs doing? Post it to our marketplace that matches you with skilled people</p>
+            <p><a class="btn btn-default" href="signUp.php" role="button">Sign up&raquo;</a></p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -98,7 +98,7 @@
             </span>
             <h3>MANAGE JOBS</h3>
             <p>Already on our plaform? Click the button below to create, view and manage jobs</p>
-            <p><a class="btn btn-default" href="#" role="button">Sign in now &raquo;</a></p>
+            <p><a class="btn btn-default" href="login.php" role="button">Sign in now &raquo;</a></p>
          </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -118,7 +118,7 @@
 
       <footer>
         <div class="container">
-          <span><img src="rec/logo/favicon.png" width="75px;" height="75px;"></span><p class="pull-right">&copy; 2018 224 Coding</p>
+          <span><img src="rec/icon.png" width="120px;" height="120px;"></span><p class="pull-right">&copy; 2018 224 Coding</p>
 
         </div>
 

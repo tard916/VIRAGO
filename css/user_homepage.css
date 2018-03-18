@@ -364,25 +364,6 @@ border-radius: 0 18px 18px 0;
   margin-left: 1%;
 }
 
-.searchContainer {
-    background-color: #d8d8d8;
-    padding: 20px 28px;
-}
-
-.searchContainer h4{
-    margin: 0;
-    font-weight: 500;
-}
-
-.searchContainer .searchInput {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    font-weight: 700;
-    font-size: 62px;
-    letter-spacing: 2px;
-}
-
 
 /*Style of Footer*/
 footer {

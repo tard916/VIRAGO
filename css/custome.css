@@ -4,7 +4,12 @@ body {
 
 }
 
-
+.container home-page{
+  padding-top: 0;
+  margin-bottom: 0 auto;
+  margin-top: 0 auto;
+  opacity: 0;
+}
 
 ul.nav, .jumbotron h1{
 	font-family: 'Arvo',courier, serif;
