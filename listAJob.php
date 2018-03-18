@@ -186,7 +186,7 @@
 
                   ?>
        				<!--Example 1: Vertical Form-->
-       				<form class="form" name="member_signup" action="BackEnd_Script/" method="POST">
+       				<form class="form" name="member_signup" action="BackEnd_Script/listJob.php" method="POST">
 
 
        				  <div class="row ">
@@ -252,16 +252,7 @@
                            </div>
 
        				        </br>
-       				        <div class="row">
-       				            <div class="form-group">
-
-       				                <div class="col-xs-10 col-xs-offset-1">
-       				                    <input type="time" name="edTime" class="form-control input-lg"  placeholder="Edding Time"/>
-       				                </div>
-       				            </div>
-       				          </div>
-
-       				        </br>
+       				        
        				        <div class="row">
        				            <div class="form-group">
        				                <div class="col-xs-10 col-xs-offset-1">

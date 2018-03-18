@@ -174,9 +174,8 @@
             <div class="row inner-row-content">
               <?php
 
-
-                  
-                  $result = $con->query("SELECT * FROM jobs WHERE CL_UniqueID = '$client'  ORDER BY id");
+                  $client = $_SESSION['user_ID'];
+                  $result = $con->query("SELECT * FROM jobs WHERE CL_UniqueID = '$client'");
 
 
                  foreach ($result as $key => $rs) {
@@ -186,7 +185,7 @@
                 <h2><?php echo $rs["jobTitel"];?> </h2>
                 <h4 class="id"> ID: <?php echo $rs["JB_UniqueID"];?></h4>              
                 <p>Date: <?php echo $rs["stDate"].' TO';?> <span><?php echo $rs["edDate"];?></span> </P>
-                <p>Time: <?php echo $rs["stTime"].' TO';?> <span><?php echo $rs["edTime"];?></span> </P>
+                <p>Time: <?php echo $rs["stTime"];?></P>
                 <p>Fee: <?php echo 'RM'.$rs["price"];?></p>
                 <p>Status: <?php echo $rs["status"];?></p>
                 

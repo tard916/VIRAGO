@@ -144,9 +144,15 @@
                     Edit Profile
                 </a>
               </li>
+              <li class="active menu-spacing">
+                <a href="searchJob.php">
+                  <i class="glyphicon glyphicon-pencil"></i>
+                    Search Job
+                </a>
+              </li>
               <!--The id "pageSubmenu" is the sub menu of the View History-->
               <li class="menu-spacing">
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                <a href="#" data-toggle="collapse" aria-expanded="false">
                   <i class="glyphicon glyphicon-duplicate"></i>
                     View Posted Jobs
                 </a>                

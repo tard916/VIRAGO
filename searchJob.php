@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <!-- Custom styles for this webpage -->
   <link href="css/user_homepage.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/search.css" rel="stylesheet">
   <!--Bootstrap Javascript-->
   <script src="js/bootstrap.min.js"></script>
   <!--Jquery link-->
@@ -139,7 +140,7 @@
                     Edit Profile
                 </a>
               </li>
-             <li class="active menu-spacing">
+             <li class="menu-spacing">
                 <a href="searchJob.php">
                   <i class="glyphicon glyphicon-pencil"></i>
                     Search Job
@@ -147,7 +148,7 @@
               </li>
               <!--The id "pageSubmenu" is the sub menu of the View History-->
               <li class="menu-spacing">
-                <a href="#" data-toggle="collapse" aria-expanded="false">
+                <a href="#" >
                   <i class="glyphicon glyphicon-duplicate"></i>
                     View Posted Jobs
                 </a>                
@@ -173,38 +174,34 @@
 
                     </div>
                 </div>
-            </nav>
-
+            </nav>            
+            <form class="form-wrapper cf" action="searchJob.php" method="POST">
+                <input type="text" name="search" placeholder="Search here..." required>
+                <button type="submit" name="submit">Search</button>
+            </form>
+           
             <!-- Rows and Ccolumns of the Page Contents-->
             <div class="row inner-row-content">
               <!--To display the trainingsession registered by
                   by member in box by box for each session
               -->
               <?php
-                  $member = $_SESSION['user_ID'];
-                  $result = $con->query("SELECT trainingsession.* FROM trainingsession INNER JOIN registredtraining ON registredtraining.sessionID = trainingsession.sessionID where registredtraining.memberID = '$member'");
+                  $specialty = $_POST['search'];
+
+                  
+                  
+                  $result = $con->query("SELECT * FROM jobs where category= '$specialty'");
                   foreach ($result as $key => $rs) {
-                   // create date object from the date set from database
-                  $dateObj = new DateTime($rs['date']);
-                  $currentDate = new DateTime();   // create current time
+                  
               ?>
               <div class="col-md-4 col-lg-4 popout content-layout">
-                <h3><?php echo $rs["sessionType"];?></h3>
-                <h5>Title: <?php echo $rs["titel"];?></h5>
-                <p>Date: <?php echo $rs["date"];?></p>
-                <p>Time: <?php echo $rs["time"];?></P>
-                <p></p>
-                <?php
-                  //display the review button only if the session date has passed.
-                  if($dateObj < $currentDate){
-                 ?>
-                <p><a class="btn btn-primary" href="trainer_review.php?session_id=<?php echo $rs['sessionID']; ?>" role="button">Review &raquo;</a></p>
-              <?php }else{
-                ?>
-                <p>Unable to review</p>
-              <?php
-                }
-              ?>
+                <h2><?php echo $rs["jobTitel"];?> </h2>
+                <h4 class="id"> ID: <?php echo $rs["JB_UniqueID"];?></h4>              
+                <p>Date: <?php echo $rs["stDate"].' TO';?> <span><?php echo $rs["edDate"];?></span> </P>
+                <p>Time: <?php echo $rs["stTime"];?></P>
+                <p>Fee: <?php echo 'RM'.$rs["price"];?></p>
+                <p>Status: <?php echo $rs["status"];?></p>
+                <p><a class="btn btn-primary" href="#" role="button">View &raquo;</a></p>              
               </div>
               <?php
                 }
@@ -246,3 +243,4 @@
       </footer>
   </body>
 </html>
+
