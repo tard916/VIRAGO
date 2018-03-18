@@ -23,7 +23,7 @@ a:hover {
 }
 
 .form {
-  background: rgba(19, 35, 47, 0.9);
+  background: #d8d8d8;
   padding: 40px;
   max-width: 600px;
   margin: 40px auto;
@@ -142,6 +142,10 @@ textarea {
   position: relative;
   margin-bottom: 40px;
 }
+.field-wrap .checkbox input{
+  margin-bottom: 15%;
+  float: left;
+}
 
 .top-row:after {
   content: "";
@@ -196,4 +200,8 @@ textarea {
 .forgot {
   margin-top: -20px;
   text-align: right;
+}
+
+.Nuser {
+  margin-left: 33%;
 }

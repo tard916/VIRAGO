@@ -1,14 +1,14 @@
 <?php
 	
-	$uniqueID = uniqid("VIRAGO_JS_", true);
-	$firstName = $_POST['firstName'];
-	$lastName = $_POST['lastName'];
-	$email = $_POST['email'];
-	$pass = $_POST['password'];
-	$cPass = $_POST['password1'];	
-	$address = $_POST['address'];
-	$phone = $_POST['phone'];
-	$specialty = $_POST['specialty'];	
+	$uniqueID = uniqid("VIRAGO_CLT_", true);
+	$firstName = $_POST['firstName1'];
+	$lastName = $_POST['lastName1'];
+	$email = $_POST['email1'];
+	$pass = $_POST['pass1'];
+	$cPass = $_POST['cPass1'];	
+	$address = $_POST['address1'];
+	$phone = $_POST['phone1'];
+		
 
 
 
@@ -16,10 +16,11 @@
 	include 'DBConfig.php';
 
 	
-	if (isset($_POST['jobSeeker_submit'])) {
+
+	if (isset($_POST['client_submit'])) {
 
 
-		if (empty($firstName)&&empty($lastName)&&empty($email)&&empty($pass)&&empty($address)&&empty($phone)&&empty($specialty)) {
+		if (empty($firstName)&&empty($lastName)&&empty($email)&&empty($pass)&&empty($address)&&empty($phone)) {
 
 			echo '<script language = "javascript">';
 			echo 'alert("All the field most be completed")';
@@ -28,7 +29,7 @@
 
 		}else{			
 
-			$checkEmail = mysqli_query($con,"SELECT email FROM jobseekers where email ='$email'");
+			$checkEmail = mysqli_query($con,"SELECT email FROM client where email ='$email'");
 
 			$row = mysqli_fetch_array($checkEmail);
 			$data = $row[0];
@@ -42,7 +43,7 @@
 
 				if ($pass == $cPass) {
 
-					$sql = "INSERT INTO jobseekers ( firstName, lastName, email, password, address, phone, specialty, JS_UniqueID) VALUES ('$firstName','$lastName','$email','$pass','$address','$phone','$specialty','$uniqueID')";
+					$sql = "INSERT INTO client ( firstName, lastName, email, password, address, phone, CL_UniqueID) VALUES ('$firstName','$lastName','$email','$pass','$address','$phone','$uniqueID')";
 
 					if ($con->query($sql) == TRUE && mysqli_affected_rows($con) >0){
 

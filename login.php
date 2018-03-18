@@ -24,24 +24,18 @@
       <div class="tab-content">
         <div id="signup">   
          
-          <form action="/" method="post">         
+          <form action="BackEnd_Script/loginAcc.php" method="post">         
 
-            <div class="field-wrap">
-              <label>
-                Email <span class="req">*</span>
-              </label>
-              <input type="email" required autocomplete="off"/>
+            <div class="field-wrap">              
+              <input type="email" name="userEmail" required autocomplete="off" placeholder="Email*" />
             </div>
             
-            <div class="field-wrap">
-              <label>
-                Password<span class="req">*</span>
-              </label>
-              <input type="password"required autocomplete="off"/>
-            </div>            
+            <div class="field-wrap">              
+              <input type="password" name="password" required autocomplete="off" placeholder="Password*" />
+            </div>         
             
-            <button type="submit" class="button button-block"/>SIGN IN</button>
-            <a href="index.php" class="button btn-cancel ">CANCEL</a>
+            <button type="submit" name="submit" class="button button-block"/>SIGN IN</button>
+            <a href="../index.php" class="button btn-cancel ">CANCEL</a>
 
           </form>
 
