@@ -111,7 +111,7 @@
 
 
                 $jobseekersID = $_SESSION['user_ID'];
-                $result = $con->query("SELECT firstName FROM jobseekers  where JS_UniqueID = '$jobseekers'");
+                $result = $con->query("SELECT firstName FROM jobseekers  where JS_UniqueID = '$jobseekersID'");
                 $rs = $result->fetch_array();
             ?>
             <div class="userinfo-title">

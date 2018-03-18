@@ -135,7 +135,7 @@
                 </a>
               </li>
               <li class="menu-spacing">
-               <a href="trainer_rec_session.php">
+               <a href="listAJob.php">
                  <i class="	glyphicon glyphicon-plus-sign"></i>
                    Post a Job
                </a>
@@ -171,7 +171,7 @@
 
             <div class="box col-xs-10 col-xs-offset-1 form-animation">
                	<br/>
-               		<h1>Edit Profile</h1>
+               		<h1>Post A Job</h1>
                	<br/>
                	<hr>
                	<br/>
@@ -180,30 +180,43 @@
                   <?php
                   
                       $trainer = $_SESSION['user_ID'];
-                      $result = $con->query("SELECT * FROM client where CL_UniqueID = '$trainer'");
+                      $result = $con->query("SELECT * FROM category");
 
-                      while($rs = $result->fetch_array()){
+                      
 
                   ?>
        				<!--Example 1: Vertical Form-->
-       				<form class="form" name="member_signup" action="BackEnd_Script/trainer_profile_update.php" method="POST">
+       				<form class="form" name="member_signup" action="BackEnd_Script/" method="POST">
 
 
        				  <div class="row ">
        				            <div class="form-group">
 
        				                <div class="col-xs-10 col-xs-offset-1" >
-       				                    <input type="text" name="firstName" class="form-control input-lg"  value="<?php echo $rs['firstName']; ?>">
+       				                    <input type="text" name="jobTitel" class="form-control input-lg" placeholder="Job Titel" />
        				        		    </div>
        				            </div>
        				  </div>
-                </br>
 
+                </br>
+                      <div class="row">
+                        <div class="form-group">
+                          <div class="col-xs-10 col-xs-offset-1">
+                            <select name="category" class="form-control input-lg">
+                              <option>Select</option>
+                              <?php while($rs = $result->fetch_array()){?>
+                              <option value="<?php echo $rs['categoryName']; ?>"><?php echo $rs['categoryName']; ?></option>
+                              <?php } ?>                              
+                            </select>
+                          </div>
+                        </div>
+                       </div>
+                  </br>
        				    <div class="row">
        				        <div class="form-group">
 
        				            <div class="col-xs-10 col-xs-offset-1">
-       				                <input type="text" name="lastName" class="form-control input-lg"  value="<?php echo $rs['lastName']; ?>">
+       				                <input type="text" name="address" class="form-control input-lg"  placeholder="Address"/>
        				            </div>
        				        </div>
        				    </div>
@@ -213,7 +226,7 @@
        				            <div class="form-group">
 
        				                <div class="col-xs-10 col-xs-offset-1">
-       				                    <input type="email" name="email" class="form-control input-lg"  value="<?php echo $rs['email']; ?>">
+       				                    <input type="date" name="stDate" class="form-control input-lg"  placeholder="Starting Date"/>
        				                </div>
        				            </div>
        				          </div>
@@ -224,7 +237,7 @@
        				            <div class="form-group">
 
        				                <div class="col-xs-10 col-xs-offset-1">
-       				                    <input type="password" name="password" class="form-control input-lg"  placeholder="Password">
+       				                    <input type="date" name="edDate" class="form-control input-lg"  placeholder="Ending Date"/>
        				                </div>
        				            </div>
        				          </div>
@@ -233,7 +246,7 @@
                              <div class="form-group">
 
                                  <div class="col-xs-10 col-xs-offset-1">
-                                     <input type="password" name="cpass" class="form-control input-lg"  placeholder="Confirm Password">
+                                     <input type="time" name="stTime" class="form-control input-lg"  placeholder="Starting Time"/>
                                  </div>
                              </div>
                            </div>
@@ -243,7 +256,7 @@
        				            <div class="form-group">
 
        				                <div class="col-xs-10 col-xs-offset-1">
-       				                    <input type="text" name="address" class="form-control input-lg"  value="<?php echo $rs['address']; ?>">
+       				                    <input type="time" name="edTime" class="form-control input-lg"  placeholder="Edding Time"/>
        				                </div>
        				            </div>
        				          </div>
@@ -252,7 +265,7 @@
        				        <div class="row">
        				            <div class="form-group">
        				                <div class="col-xs-10 col-xs-offset-1">
-       				                    <input type="text" name="phone" class="form-control input-lg"  value="<?php echo $rs['phone']; ?>">
+       				                    <input type="text" name="price" class="form-control input-lg"  placeholder="Price">
        				                </div>
 
        				            </div>
@@ -264,9 +277,7 @@
        	</br>
        	</br>
        				</form>
-              <?php
-                      }
-                      ?>
+              
                	</div>
        	</div>
           </div>
