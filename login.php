@@ -35,7 +35,7 @@
             </div>         
             
             <button type="submit" name="submit" class="button button-block"/>SIGN IN</button>
-            <a href="../index.php" class="button btn-cancel ">CANCEL</a>
+            <a href="index.php" class="button btn-cancel ">CANCEL</a>
 
           </form>
 
