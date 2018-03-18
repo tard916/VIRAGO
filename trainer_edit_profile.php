@@ -48,7 +48,7 @@
           <div class="navbar-header">
             <!--logo button of the website on the top left corner-->
             <a  href="trainer_homepage.php">
-              <image src="symbol/logoimg1.png" alt="img_logo" id="img_logo_trainer">
+              <image src="rec/virago.png" alt="img_logo" id="img_logo_trainer">
             </a>
           </div>
           <div id="navbar" class="collapse navbar-collapse ">
@@ -81,14 +81,14 @@
                 $image = $row['name'];
 
                 if (!empty($image)) {
-                  
+
                   $image_src = "symbol/profilePic/".$image;
                 }
                 else{
-                  
+
                   $image_src = "symbol/profilePic/default.png";
                 }
-                
+
 
 
               ?>
@@ -99,7 +99,7 @@
               <form method="post" action="addProfilePic.php" enctype='multipart/form-data'>
                   <input type='file' name='file' />
                   <input type='submit' value='Save name' name='but_upload'>
-                  
+
               </form>
             </div>
           </div>
@@ -178,7 +178,7 @@
                	<div class="midBox">
 
                   <?php
-                  
+
                       $trainer = $_SESSION['user_ID'];
                       $result = $con->query("SELECT * FROM client where CL_UniqueID = '$trainer'");
 

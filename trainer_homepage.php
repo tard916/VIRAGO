@@ -176,7 +176,7 @@
 
 
                   $client = $_SESSION['user_ID'];
-                  
+
                   $result = $con->query("SELECT * FROM jobs WHERE CL_UniqueID = '$client'  ORDER BY id");
                  foreach ($result as $key => $rs) {
 

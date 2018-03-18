@@ -48,7 +48,7 @@
           <div class="navbar-header">
             <!--logo button of the website on the top left corner-->
             <a  href="trainer_homepage.php">
-              <image src="symbol/logoimg1.png" alt="img_logo" id="img_logo_trainer">
+              <image src="rec/virago.png" alt="img_logo" id="img_logo_trainer">
             </a>
           </div>
           <div id="navbar" class="collapse navbar-collapse ">
@@ -81,14 +81,14 @@
                 $image = $row['name'];
 
                 if (!empty($image)) {
-                  
+
                   $image_src = "symbol/profilePic/".$image;
                 }
                 else{
-                  
+
                   $image_src = "symbol/profilePic/default.png";
                 }
-                
+
 
 
               ?>
@@ -99,7 +99,7 @@
               <form method="post" action="addProfilePic.php" enctype='multipart/form-data'>
                   <input type='file' name='file' />
                   <input type='submit' value='Save name' name='but_upload'>
-                  
+
               </form>
             </div>
           </div>
@@ -178,11 +178,11 @@
                	<div class="midBox">
 
                   <?php
-                  
+
                       $trainer = $_SESSION['user_ID'];
                       $result = $con->query("SELECT * FROM category");
 
-                      
+
 
                   ?>
        				<!--Example 1: Vertical Form-->
@@ -193,7 +193,7 @@
        				            <div class="form-group">
 
        				                <div class="col-xs-10 col-xs-offset-1" >
-       				                    <input type="text" name="jobTitel" class="form-control input-lg" placeholder="Job Titel" />
+       				                    <input type="text" name="jobTitel" class="form-control input-lg" placeholder="Job Title" />
        				        		    </div>
        				            </div>
        				  </div>
@@ -206,7 +206,7 @@
                               <option>Select</option>
                               <?php while($rs = $result->fetch_array()){?>
                               <option value="<?php echo $rs['categoryName']; ?>"><?php echo $rs['categoryName']; ?></option>
-                              <?php } ?>                              
+                              <?php } ?>
                             </select>
                           </div>
                         </div>
@@ -252,7 +252,7 @@
                            </div>
 
        				        </br>
-       				        
+
        				        <div class="row">
        				            <div class="form-group">
        				                <div class="col-xs-10 col-xs-offset-1">
@@ -268,7 +268,7 @@
        	</br>
        	</br>
        				</form>
-              
+
                	</div>
        	</div>
           </div>
