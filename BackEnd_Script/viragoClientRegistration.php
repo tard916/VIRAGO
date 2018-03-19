@@ -43,7 +43,8 @@
 
 				if ($pass == $cPass) {
 
-					$sql = "INSERT INTO client ( firstName, lastName, email, password, address, phone, CL_UniqueID) VALUES ('$firstName','$lastName','$email','$pass','$address','$phone','$uniqueID')";
+					$sql = "INSERT INTO client ( firstName, lastName, email, password, address, phone, CL_UniqueID) 
+					VALUES ('$firstName','$lastName','$email','$pass','$address','$phone','$uniqueID')";
 
 					if ($con->query($sql) == TRUE && mysqli_affected_rows($con) >0){
 

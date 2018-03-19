@@ -51,7 +51,9 @@
 
 				if ($diff3->format('%r%d ') > 0 ) {
 
-					$sql = "INSERT INTO jobs (jobTitel, address, category, price, stDate, edDate, stTime, JB_UniqueID) VALUES ('$jobTitel','$address','$category','$price','$stDate','$edDate','$stTime','$uniqueID')";
+					$sql = "INSERT INTO jobs (jobTitel, address, category, price,
+					 stDate, edDate, stTime, JB_UniqueID) VALUES ('$jobTitel','$address',
+					 '$category','$price','$stDate','$edDate','$stTime','$uniqueID')";
 
 					if ($con->query($sql) == TRUE && mysqli_affected_rows($con) >0){
 

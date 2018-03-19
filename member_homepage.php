@@ -139,7 +139,7 @@
                     Edit Profile
                 </a>
               </li>
-             <li class="active menu-spacing">
+             <li class="menu-spacing">
                 <a href="searchJob.php">
                   <i class="glyphicon glyphicon-pencil"></i>
                     Search Job

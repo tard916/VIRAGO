@@ -154,7 +154,7 @@
                 </a>                
               </li>
               <li class=" menu-spacing">
-                 <a href="member_history.php">
+                 <a href="#">
                      <i class="glyphicon glyphicon-home"></i>
                      View History
                  </a>
@@ -187,10 +187,10 @@
               -->
               <?php
                   $specialty = $_POST['search'];
-
                   
                   
-                  $result = $con->query("SELECT * FROM jobs where category= '$specialty'");
+                  
+                  $result = $con->query("SELECT * FROM jobs where category like '$specialty%' ");
                   foreach ($result as $key => $rs) {
                   
               ?>
