@@ -29,14 +29,14 @@
                 document.getElementById("Speci").style.border="1px solid red";
                 //stop submission action
                 e.preventDefault();
-        }
-     else {
-        if(document.JobSeekers.pass.value <6
-        && document.JobSeekers.Phn.value <6 && document.JobSeekers.addr.value <6
-        && document.JobSeekers.pass.value !== document.JobSeekers.Phn.value
-        && reg.test(document.JobSeekers.email.value) == false){
-          e.preventDefault();
-        }
+            }
+           else {
+              if(document.JobSeekers.pass.value <6
+              && document.JobSeekers.Phn.value <6 && document.JobSeekers.addr.value <6
+              && document.JobSeekers.pass.value !== document.JobSeekers.Phn.value
+              && reg.test(document.JobSeekers.email.value) == false){
+                e.preventDefault();
+            }
 
        else{
          if( document.JobSeekers.fname.value == "" ){
