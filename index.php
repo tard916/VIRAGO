@@ -71,6 +71,7 @@
         <hr>
         <p>
           At Virago, we aim to provide a platform to connect a wiling<br>community to a wide range of services and vice versa!
+          As a job seeker, it's as simple as adding your skills. As a client, those skills are matched to whichever task you need fulfilled.
         </p>
       </div>
     </div>

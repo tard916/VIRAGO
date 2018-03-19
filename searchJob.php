@@ -13,7 +13,7 @@
   }
   $fullName = $_SESSION['userFullName'];
   $userID = $_SESSION['user_ID'];
-  
+
 ?>
 <!DOCTYPE html>
 <html >
@@ -58,7 +58,7 @@
             </button>
             <!--logo button of the website on the top left corner-->
             <a  href="member_homepage.php">
-              <image src="symbol/logoimg1.png" alt="img_logo" id="img_logo_trainer">
+              <image src="rec/virago.png" alt="img_logo" id="img_logo_trainer">
             </a>
           </div>
           <div id="navbar" class="collapse navbar-collapse ">
@@ -151,7 +151,7 @@
                 <a href="#" >
                   <i class="glyphicon glyphicon-duplicate"></i>
                     View Posted Jobs
-                </a>                
+                </a>
               </li>
               <li class=" menu-spacing">
                  <a href="member_history.php">
@@ -174,12 +174,12 @@
 
                     </div>
                 </div>
-            </nav>            
+            </nav>
             <form class="form-wrapper cf" action="searchJob.php" method="POST">
                 <input type="text" name="search" placeholder="Search here..." required>
                 <button type="submit" name="submit">Search</button>
             </form>
-           
+
             <!-- Rows and Ccolumns of the Page Contents-->
             <div class="row inner-row-content">
               <!--To display the trainingsession registered by
@@ -188,20 +188,20 @@
               <?php
                   $specialty = $_POST['search'];
 
-                  
-                  
+
+
                   $result = $con->query("SELECT * FROM jobs where category= '$specialty'");
                   foreach ($result as $key => $rs) {
-                  
+
               ?>
               <div class="col-md-4 col-lg-4 popout content-layout">
                 <h2><?php echo $rs["jobTitel"];?> </h2>
-                <h4 class="id"> ID: <?php echo $rs["JB_UniqueID"];?></h4>              
+                <h4 class="id"> ID: <?php echo $rs["JB_UniqueID"];?></h4>
                 <p>Date: <?php echo $rs["stDate"].' TO';?> <span><?php echo $rs["edDate"];?></span> </P>
                 <p>Time: <?php echo $rs["stTime"];?></P>
                 <p>Fee: <?php echo 'RM'.$rs["price"];?></p>
                 <p>Status: <?php echo $rs["status"];?></p>
-                <p><a class="btn btn-primary" href="#" role="button">View &raquo;</a></p>              
+                <p><a class="btn btn-primary" href="#" role="button">View &raquo;</a></p>
               </div>
               <?php
                 }
@@ -243,4 +243,3 @@
       </footer>
   </body>
 </html>
-
