@@ -24,17 +24,15 @@
       <div class="tab-content">
         <div id="signup">   
          
-          <form action="/" method="post">         
+          <form action="BackEnd_Script/sendPass.php" method="post">         
 
             <div class="field-wrap">
-              <label>
-                Email <span class="req">*</span>
-              </label>
-              <input type="email" required autocomplete="off"/>
+              
+              <input type="email" name="email" placeholder="Enter Your Email." required autocomplete="off"/>
             </div>           
            
             
-            <button type="submit" class="button button-block"/>SEND</button>
+            <button type="submit" name="resetPass" class="button button-block"/>SEND</button>
             <a href="index.php" class="button btn-cancel ">CANCEL</a>
 
           </form>    

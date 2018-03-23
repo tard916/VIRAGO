@@ -297,14 +297,14 @@ a.article, a.article:hover {
 
 .content-layout {
     animation: popout .8s ease;
-    -webkit-animation: popout 1s ease;
-    border: 10px solid #e5e5cc;
+    -webkit-animation: popout 0.5s ease;
+    border: 7px solid #d8d8d8;
     border-right: 1px white;
-    border-radius: 5px 20px 5px;
+    border-radius: 5px 10px 5px;
     margin-top: 10px;
 }
 .inner-row-content{
-  padding:20px;
+  padding:10px;
 }
 
 /*Pagination style*/
@@ -361,7 +361,7 @@ border-radius: 0 18px 18px 0;
 }
 .popout{
   border-right: 1px dashed black;
-  margin-left: 1%;
+  
 }
 
 
@@ -438,12 +438,12 @@ footer {
 /*To Customize the animation and give them a name*/
 @keyframes popout {
     from{transform:scale(0)}
-    80%{transform:scale(1.2)}
+    70%{transform:scale(1.2)}
     to{transform:scale(1)}
 }
 @-webkit-keyframes popout {
     from{-webkit-transform:scale(0)}
-    80%{-webkit-transform:scale(1.2)}
+    70%{-webkit-transform:scale(1.2)}
     to{-webkit-transform:scale(1)}
 }
 

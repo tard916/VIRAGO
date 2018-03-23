@@ -82,7 +82,7 @@
             </div>
           </div>
         </div>
-        <!--
+        
         <div class="item">
           <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
           <div class="container">
@@ -92,7 +92,7 @@
               <p><a class="btn btn-lg btn-primary" href="gallery.php" role="button">Browse gallery</a></p>
             </div>
           </div>
-        </div> //-->
+        </div> 
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>

@@ -41,11 +41,11 @@
 
 			 	if ($_SESSION['user_Type'] == 1) {
 					//print message with user's fullname
-					echo sprintf('<script type="text/javascript"> alert("Welcome at Helpfit: %s");</script>', $_SESSION['userFullName']);
+					echo sprintf('<script type="text/javascript"> alert("Welcome at VIRAGO: %s");</script>', $_SESSION['userFullName']);
 			 	 	echo  "<script> window.location.assign('../trainer_homepage.php'); </script>";
 
 			 	 } else{
-					echo sprintf('<script type="text/javascript"> alert("Welcome at Helpfit: %s");</script>', $_SESSION['userFullName']);
+					echo sprintf('<script type="text/javascript"> alert("Welcome at VIRAGO: %s");</script>', $_SESSION['userFullName']);
 			 	 	echo  "<script> window.location.assign('../member_homepage.php'); </script>";
 			 	 }
 

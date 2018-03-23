@@ -119,7 +119,7 @@
 
       <footer>
         <div class="container">
-          <span><img src="rec/icon.png" width="120px;" height="120px;"></span><p class="pull-right">&copy; 2018 224 Coding</p>
+          <span><img src="rec/icon.png" width="120px;" height="120px;"></span><p class="copyRight pull-right">&copy; 2018 224 Coding</p>
 
         </div>
 

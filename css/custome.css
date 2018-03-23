@@ -21,8 +21,12 @@ ul.nav{
 
 footer {
 	background-color: #38bcee;
-	padding-top: 150px;
-	padding-bottom: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.copyRight {
+	margin-top: 5%;
 }
 
 #get-involved{

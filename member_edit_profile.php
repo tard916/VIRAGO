@@ -8,7 +8,7 @@
           echo '<script language = "javascript">';
           echo 'alert("You have to login first.")';
           echo '</script>';
-          echo  "<script> window.location.assign('login_page.php'); </script>";
+          echo  "<script> window.location.assign('login.php'); </script>";
           exit;
   }
   $firstName = $_SESSION['userfirstName'];
@@ -105,7 +105,7 @@
             <img src="<?php echo $image_src;?>" class="img-responsive img-circle" alt="User Profile image">
             <!--The hidden button for the hover effect on the photo -->
             <div class="hidden-btn-image">
-              <form method="post" action="addProfilePicMember.php" enctype='multipart/form-data'>
+              <form method="post" action="BackEnd_Script/addProfilePicMember.php" enctype='multipart/form-data'>
                   <input type='file' name='file' />
                   <input type='submit' value='Save name' name='but_upload'>
 
@@ -146,7 +146,7 @@
               </li>
               <li class="active menu-spacing">
                 <a href="searchJob.php">
-                  <i class="glyphicon glyphicon-pencil"></i>
+                  <i class="glyphicon glyphicon-search"></i>
                     Search Job
                 </a>
               </li>
@@ -294,7 +294,7 @@
           <div class= "row">
             <div class="footer-main">
               <div class="col-xs-2 col-sm-2  col-sm-offset-1 footerbrand">
-                <a href="member_homepage.php">HELPFit</a>
+                <a href="member_homepage.php">VIRAGO</a>
               </div>
             </div>
             <div class=footerlink>
@@ -310,12 +310,12 @@
             </div>
             <div class="socialbtn">
               <div class="col-xs-2 col-sm-2 a">
-                <a href="https://www.instagram.com/helpfit.id/?hl=en" class="btn btn-social-icon btn-instagram">
+                <a href="#" class="btn btn-social-icon btn-instagram">
                   <i class="fa fa-instagram"></i>
                 </a>
               </div>
               <div class="col-xs-2 col-sm-2 col-sm-offset-1  col-xs-offset-1">
-                <a href="https://www.facebook.com/HelpFit.ID/" class="btn btn-social-icon btn-facebook">
+                <a href="#" class="btn btn-social-icon btn-facebook">
                   <i class="fa fa-facebook"></i>
                 </a>
               </div>
