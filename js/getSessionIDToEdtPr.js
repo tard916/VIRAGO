@@ -2,5 +2,5 @@
 $(".btnEditPer").click(function() {
     var $row = $(this).closest("tr");    // Find the row
     var $id = $row.find(".id").text(); // Find the text
-  window.location.href = "trainer_session_personal_edit.php?id=" + $id ;
+  window.location.href = "editJob.php?id=" + $id ;
 });

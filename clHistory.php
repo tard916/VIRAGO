@@ -144,7 +144,7 @@
               </li>
               <li class="menu-spacing">
                <a href="listAJob.php">
-                 <i class="	glyphicon glyphicon-plus-sign"></i>
+                 <i class=" glyphicon glyphicon-plus-sign"></i>
                    Post A Job
                </a>
              </li>
@@ -170,65 +170,103 @@
                     </div>
                 </div>
             </nav>
-            <!-- Rows and Ccolumns of the Page Contents-->
-            <div class="row inner-row-content">
-              <?php
 
-
-                  $client = $_SESSION['user_ID'];
-
-                  $result = $con->query("SELECT * FROM jobs WHERE CL_UniqueID = '$client'  ORDER BY id");
-                 foreach ($result as $key => $rs) {
-
-              ?>
-              <div class="col-md-4 col-lg-4 popout content-layout">
-                <h2><?php echo $rs["jobTitel"];?> </h2>
-                <h4 class="id"> ID: <?php echo $rs["JB_UniqueID"];?></h4>
-                <p>Date: <?php echo $rs["stDate"].' TO';?> <span><?php echo $rs["edDate"];?></span> </P>
-                <p>Time: <?php echo $rs["stTime"];?></P>
-                <p>Fee: <?php echo 'RM'.$rs["price"];?></p>
-                <p>Status: <?php echo $rs["status"];?></p>
-
-
+            <div class="panel panel-default panel-table">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col col-xs-6">
+                    <h3 class="panel-title">Jobs History</h3>
+                  </div>
+                </div>
               </div>
-              <?php
+              <div class="panel-body">
+                <div class="table-responsive">
+                  <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Time</th>
+                        <th>Price</th>
+                        <th>Status</th>                        
+                        <th><em class="fa fa-cog"></em></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!--To display the history records of the training session recorded by the trainer in a table -->
+                      <?php
+                          $client = $_SESSION['user_ID'];
+                          $result = $con->query("SELECT * FROM jobs WHERE CL_UniqueID = '$client'  ORDER BY id");
+                         foreach ($result as $key => $rs) {
 
-            }
-              ?>
-
-
+                      ?>
+                    <tr>
+                      <td class="id"><?php echo $rs["JB_UniqueID"];?></td>
+                      <td><?php echo $rs["jobTitel"];?></td>
+                      <td><?php echo $rs["stDate"];?></td>
+                      <td><?php echo $rs["edDate"];?></td>
+                      <td><?php echo $rs["stTime"];?></td>
+                      <td><?php echo $rs["price"];?></td>
+                      <td><?php echo $rs["status"];?></td>
+                      <td>
+                        <div class="text-center">
+                          <button type="submit" name="submit" class="btn btn-default btnEditPer"><em class="fa fa-pencil"></em></button>
+                      </div>
+                      </td>
+                    </tr>
+                    <?php
+                      }
+                    ?>
+                    </tbody>
+                  </table>
+                  <div class="panel-footer">
+                  </div>
+                </div>
+              </div>
             </div>
-            <footer class="footer-hide-show">
-              <div class= "row">
-                <div class="footer-main">
-                  <div class="col-xs-2 col-sm-2  col-sm-offset-1 footerbrand">
-                    <a href="trainer_homepage.php">&copy; 2018 VIRAGO Develop By 224 Coding</a>
-                  </div>
-                </div>
-                <div class=footerlink>
-                  <div class="col-xs-3 col-sm-3">
-                    <a href="trainer_about.php" id="footerlink_1">ABOUT</a>
-                  </div>
-                  <div class="col-xs-3 col-sm-3  col-sm-offset-1">
-                    <a href="trainer_contact.php" id="footerlink_2">CONTACT</a>
-                  </div>
-                  <div class="col-xs-3 col-sm-3  col-sm-offset-2  col-xs-offset-1">
-                    <a href="trainer_faqpage.php" id="footerlink_3">FAQ</a>
-                  </div>
-                </div>
-                <div class="socialbtn">
-                  <div class="col-xs-2 col-sm-2 a">
-                    <a href="#" class="btn btn-social-icon btn-instagram">
-                      <i class="fa fa-instagram"></i>
-                    </a>
-                  </div>
-                  <div class="col-xs-2 col-sm-2 col-sm-offset-1  col-xs-offset-1">
-                    <a href="#" class="btn btn-social-icon btn-facebook">
-                      <i class="fa fa-facebook"></i>
-                    </a>
-                  </div>
-                </div>
+          </div>
+        </div>
+        <footer class="footer-hide-show">
+          <div class= "row">
+            <div class="footer-main">
+              <div class="col-xs-2 col-sm-2  col-sm-offset-1 footerbrand">
+                <a href="trainer_homepage.php">HELPFit</a>
               </div>
-            </footer>
+            </div>
+            <div class=footerlink>
+              <div class="col-xs-3 col-sm-3">
+                <a href="trainer_about.php" id="footerlink_1">ABOUT</a>
+              </div>
+              <div class="col-xs-3 col-sm-3  col-sm-offset-1">
+                <a href="trainer_contact.php" id="footerlink_2">CONTACT</a>
+              </div>
+              <div class="col-xs-3 col-sm-3  col-sm-offset-2  col-xs-offset-1">
+                <a href="trainer_faqpage.php" id="footerlink_3">FAQ</a>
+              </div>
+            </div>
+            <div class="socialbtn">
+              <div class="col-xs-2 col-sm-2 a">
+                <a href="https://www.instagram.com/helpfit.id/?hl=en" class="btn btn-social-icon btn-instagram">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </div>
+              <div class="col-xs-2 col-sm-2 col-sm-offset-1  col-xs-offset-1">
+                <a href="https://www.facebook.com/HelpFit.ID/" class="btn btn-social-icon btn-facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+             <script type="text/javascript" src="js/getSessionIDToEdtPr.js"></script>
+
+     <!--The script needs to be loaded while the page is executed-->
+        <script>
+          $(document).ready(function() {
+            $('#example').DataTable();
+          } );
+        </script>
   </body>
 </html>

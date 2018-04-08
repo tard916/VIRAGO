@@ -141,7 +141,7 @@
              <li class="menu-spacing">
                 <a href="searchJob.php">
                   <i class="glyphicon glyphicon-search"></i>
-                    Search Job
+                    Search Jobs
                 </a>
               </li>
               <!--The id "pageSubmenu" is the sub menu of the View History-->
@@ -152,7 +152,7 @@
                 </a>
               </li>
               <li class=" menu-spacing">
-                 <a href="member_history.php">
+                 <a href="jsHistory.php">
                      <i class="glyphicon glyphicon-home"></i>
                      View History
                  </a>
@@ -190,7 +190,7 @@
                   $dateObj = new DateTime($rs['stDate']);
                   $currentDate = new DateTime();   // create current time
 
-                  if ($currentDate >= $dateObj) {
+                  if ($currentDate <= $dateObj) {
                     # code...
                   
               ?>
