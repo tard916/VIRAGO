@@ -84,22 +84,18 @@
             <div class="img-sidebar-header">
               <?php
 
-                $sql = "SELECT name FROM imagesmember WHERE userID='$userID'";
+                $sql = "SELECT name FROM images WHERE userID='$userID'";
                 $result = mysqli_query($con,$sql);
                 $row = mysqli_fetch_array($result);
                 $image = $row['name'];
 
                 if (!empty($image)) {
-
                   $image_src = "symbol/profilePic/member/".$image;
                 }
                 else{
 
                   $image_src = "symbol/profilePic/default.png";
                 }
-
-
-
               ?>
             <!--Image of the user-->
             <img src="<?php echo $image_src;?>" class="img-responsive img-circle" alt="User Profile image">
@@ -107,7 +103,7 @@
             <div class="hidden-btn-image">
               <form method="post" action="BackEnd_Script/addProfilePicMember.php" enctype='multipart/form-data'>
                   <input type='file' name='file' />
-                  <input type='submit' value='Save name' name='but_upload'>
+                  <input type='submit' value='Upload' name='but_upload'>
 
               </form>
             </div>
@@ -144,7 +140,7 @@
                     Edit Profile
                 </a>
               </li>
-              <li class="active menu-spacing">
+              <li class="menu-spacing">
                 <a href="searchJob.php">
                   <i class="glyphicon glyphicon-search"></i>
                     Search Job
@@ -152,13 +148,13 @@
               </li>
               <!--The id "pageSubmenu" is the sub menu of the View History-->
               <li class="menu-spacing">
-                <a href="#" data-toggle="collapse" aria-expanded="false">
+                <a href="listedJobs.php">
                   <i class="glyphicon glyphicon-duplicate"></i>
                     View Posted Jobs
                 </a>
               </li>
               <li class=" menu-spacing">
-                 <a href="member_history.php">
+                 <a href="jsHistory.php">
                      <i class="glyphicon glyphicon-home"></i>
                      View History
                  </a>
@@ -294,7 +290,7 @@
           <div class= "row">
             <div class="footer-main">
               <div class="col-xs-2 col-sm-2  col-sm-offset-1 footerbrand">
-                <a href="member_homepage.php">VIRAGO</a>
+                <a href="member_homepage.php">&copy; 2018 VIRAGO Develop By 224 Coding</a>
               </div>
             </div>
             <div class=footerlink>

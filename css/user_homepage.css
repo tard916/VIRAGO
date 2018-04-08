@@ -433,6 +433,15 @@ footer {
 .socialbtn .btn-social-icon:active {
   background-color:black;
 }
+
+.infoCont{
+    position: relative;
+    z-index: 1;
+    align-content: center;
+    float: right;
+    margin-left: 350px;
+    
+}
 /*End of Style of the Footer*/
 
 /*To Customize the animation and give them a name*/

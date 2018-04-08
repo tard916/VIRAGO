@@ -168,7 +168,7 @@ English may not be the most spoken language in the world, but it remains as the 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2018 224 Coding. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2018 224 Coding. &middot; </p>
       </footer>
 
     </div><!-- /.container -->

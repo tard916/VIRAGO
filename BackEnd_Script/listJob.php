@@ -36,7 +36,7 @@
 
 		if (!empty($jobtitel)&&!empty($category)&&!empty($address)&&!empty($stDate)&&!empty($edDate)&&!empty($stTime)&&!empty($price)) {
 
-			if($diff1->format('%r%d') <= 0){
+			if($diff1->format('%r%d') < 0){
 				setcookie("jobtitel", $jobtitel, time()+(60*3), '/');
 				setcookie("address", $address, time()+(60*3), '/');
 				setcookie("price", $price, time()+(60*3), '/');

@@ -1,7 +1,7 @@
 <?php
   error_reporting(0);
   session_start();
-   include("BackEnd_Script/DBconfig.php");
+  include("BackEnd_Script/DBconfig.php");
 
   if ( $_SESSION['checkLoginMember'] != '1') {
 
@@ -144,14 +144,14 @@
               </li>
               <!--The id "pageSubmenu" is the sub menu of the View History-->
               <li class="menu-spacing">
-                <a href="#" >
+                <a href="listedJobs.php" >
                   <i class="glyphicon glyphicon-duplicate"></i>
                     View Posted Jobs
                 </a>
               </li>
               <li class=" menu-spacing">
                  <a href="#">
-                     <i class="glyphicon glyphicon-home"></i>
+                     <i class="glyphicon glyphicon-time"></i>
                      View History
                  </a>
               </li>
@@ -195,7 +195,7 @@
                 <p>Time: <?php echo $rs["stTime"];?></P>
                 <p>Fee: <?php echo 'RM'.$rs["price"];?></p>
                 <p>Status: <?php echo $rs["status"];?></p>
-                <p><a class="btn btn-primary" href="#" role="button">View &raquo;</a></p>
+                <p><a class="btn btn-primary" href="job_appl.php?JB_UniqueID=<?php echo $rs['JB_UniqueID']; ?>" role="button">View &raquo;</a></p>
               </div>
               <?php
                 }
@@ -205,7 +205,7 @@
               <div class= "row">
                 <div class="footer-main">
                   <div class="col-xs-2 col-sm-2  col-sm-offset-1 footerbrand">
-                    <a href="member_homepage.php">VIRAGO</a>
+                    <a href="member_homepage.php">&copy; 2018 VIRAGO Develop By 224 Coding</a>
                   </div>
                 </div>
                 <div class=footerlink>

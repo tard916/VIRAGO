@@ -275,7 +275,7 @@
           <div class= "row">
             <div class="footer-main">
               <div class="col-xs-2 col-sm-2  col-sm-offset-1 footerbrand">
-                <a href="trainer_homepage.php">VIRAGO</a>
+                <a href="trainer_homepage.php">&copy; 2018 VIRAGO Develop By 224 Coding</a>
               </div>
             </div>
             <div class=footerlink>

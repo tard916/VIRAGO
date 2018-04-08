@@ -212,6 +212,16 @@
                         </div>
                        </div>
                   </br>
+
+                  <div class="row">
+                        <div class="form-group">
+                          <div class="col-xs-10 col-xs-offset-1 slidecontainer">
+                            <p>Number of participants: <span id="demo"></span></p>
+                            <input type="range" min="1" max="100"  class="slider" id="myRange">
+                          </div>
+                        </div>
+                       </div>
+                  </br>
        				    <div class="row">
        				        <div class="form-group">
 
@@ -277,7 +287,7 @@
           <div class= "row">
             <div class="footer-main">
               <div class="col-xs-2 col-sm-2  col-sm-offset-1 footerbrand">
-                <a href="trainer_homepage.php">VIRAGO</a>
+                <a href="trainer_homepage.php">&copy; 2018 VIRAGO Develop By 224 Coding</a>
               </div>
             </div>
             <div class=footerlink>
@@ -305,5 +315,15 @@
             </div>
           </div>
         </footer>
+
+        <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
+
+            slider.oninput = function() {
+              output.innerHTML = this.value;
+            }
+        </script>
   </body>
 </html>

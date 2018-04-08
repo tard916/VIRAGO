@@ -146,7 +146,7 @@
               </li>
               <!--The id "pageSubmenu" is the sub menu of the View History-->
               <li class="menu-spacing">
-                <a href="#" data-toggle="collapse" aria-expanded="false">
+                <a href="listedJobs.php">
                   <i class="glyphicon glyphicon-duplicate"></i>
                     View Posted Jobs
                 </a>
@@ -169,8 +169,11 @@
                             <span></span>
                             <span></span>
                         </button>
-
+                        <div class="infoCont">
+                          <span><h1>Current and UpComing Jobs</h1></span>
+                        </div>
                     </div>
+                    
                 </div>
             </nav>
 
@@ -181,31 +184,26 @@
               -->
               <?php
                   $member = $_SESSION['user_ID'];
-                  $result = $con->query("SELECT trainingsession.* FROM trainingsession INNER JOIN registredtraining ON registredtraining.sessionID = trainingsession.sessionID where registredtraining.memberID = '$member'");
+                  $result = $con->query("SELECT jobs.* FROM jobs INNER JOIN acceptedjobs ON acceptedjobs.JB_UniqueID = jobs.JB_UniqueID where acceptedjobs.JS_UniqueID = '$member'");
                   foreach ($result as $key => $rs) {
                    // create date object from the date set from database
-                  $dateObj = new DateTime($rs['date']);
+                  $dateObj = new DateTime($rs['stDate']);
                   $currentDate = new DateTime();   // create current time
+
+                  if ($currentDate >= $dateObj) {
+                    # code...
+                  
               ?>
               <div class="col-md-4 col-lg-4 popout content-layout">
-                <h3><?php echo $rs["sessionType"];?></h3>
-                <h5>Title: <?php echo $rs["titel"];?></h5>
-                <p>Date: <?php echo $rs["date"];?></p>
-                <p>Time: <?php echo $rs["time"];?></P>
-                <p></p>
-                <?php
-                  //display the review button only if the session date has passed.
-                  if($dateObj < $currentDate){
-                 ?>
-                <p><a class="btn btn-primary" href="trainer_review.php?session_id=<?php echo $rs['sessionID']; ?>" role="button">Review &raquo;</a></p>
-              <?php }else{
-                ?>
-                <p>Unable to review</p>
-              <?php
-                }
-              ?>
+                <h3><?php echo $rs["jobTitel"];?></h3>
+                <h5>Title: <?php echo $rs["address"];?></h5>
+                <p>Date: <?php echo $rs["stDate"].' TO';?> <span><?php echo $rs["edDate"];?></span> </P>
+                <p>Time: <?php echo $rs["stTime"];?></P>
+                <p>Fee: <?php echo 'RM'.$rs["price"].' /Day';?></p>              
+                <!--<p><a class="btn btn-primary" href="trainer_review.php?session_id=<?php //echo $rs['sessionID']; ?>" role="button">Review &raquo;</a></p>-->
               </div>
               <?php
+                  }
                 }
               ?>
             </div>
@@ -213,7 +211,7 @@
               <div class= "row">
                 <div class="footer-main">
                   <div class="col-xs-2 col-sm-2  col-sm-offset-1 footerbrand">
-                    <a href="member_homepage.php">VIRAGO</a>
+                    <a href="member_homepage.php">&copy; 2018 VIRAGO Develop By 224 Coding</a>
                   </div>
                 </div>
                 <div class=footerlink>

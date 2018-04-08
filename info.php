@@ -82,7 +82,7 @@
           </div>
         </div>
         
-        <div class="item">
+        <!--<div class="item">
           <img class="second-slide" src="rec/jinjang_2.jpeg" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
@@ -91,7 +91,7 @@
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
             </div>
           </div>
-        </div>
+        </div>-->
    
         <div class="item">
           <img class="second-slide" src="images/pic6.jpg" alt="Second slide">
@@ -178,7 +178,7 @@ The low cost housing flats built for this community has since been open for the 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2018 224 Coding, Inc. &middot; </p>
       </footer>
 
     </div><!-- /.container -->
