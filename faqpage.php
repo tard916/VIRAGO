@@ -18,7 +18,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>HELPFit FAQ Page</title>
+  <title>VIRAGO FAQ Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <!--Bootstrap & Footawesome & Bootrap-social styles-->
@@ -46,13 +46,13 @@
             </button>
             <!--logo button of the website on the top left corner-->
             <a  href="trainer_homepage.php">
-              <image src="symbol/logoimg1.png" alt="img_logo" id="img_logo_trainer">
+              <image src="rec/virago.png" alt="img_logo" id="img_logo_trainer">
             </a>
           </div>
           <div id="navbar" class="collapse navbar-collapse ">
             <ul class="nav navbar-nav navbar-right sign_out_sub">
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="trainer_homepage.php">Trainer
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="trainer_homepage.php">Client
                   </a>
                   <ul class="dropdown-menu">
                     <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Sign Out</a></li>
@@ -77,7 +77,7 @@
             <div class="panel-body">
               <p class="font-bold c-white">Support question 1</p>
               <p>
-                How can I get motivated to start or to stick with a healthy lifestyle?
+                Why the name Virago?
               </p>
             </div>
           </a>
@@ -87,7 +87,7 @@
             <div class="panel-body">
               <p class="font-bold c-white">Support question 2</p>
               <p>
-                I feel self-conscious about going to the gym. What do I do?
+                How Can I Help?
               </p>
             </div>
           </a>
@@ -97,7 +97,7 @@
             <div class="panel-body">
               <p class="font-bold c-white">Support question 3</p>
               <p>
-                Why am I not losing body fat?
+                What Can I do?
               </p>
             </div>
           </a>
@@ -107,7 +107,7 @@
             <div class="panel-body">
               <p class="font-bold c-white">Support question 4</p>
               <p>
-               Can I lose fat and build muscle at the same time?
+               Do you accept donations?
               </p>
             </div>
           </a>
@@ -124,87 +124,70 @@
         <div class="tab-content">
           <div id="answer1" class="tab-pane active">
             <h3>
-             How can I get motivated to start or to stick with a healthy lifestyle?
+             Why was the name Virago chosen?
             </h3>
             <p>
-              The best thing you can do is to stop thinking that "motivation" is going to be what gets you results. Trying to sustain going to the gym or changing your diet with motivation is like trying to warm your house with a firecracker.
+              Originating from the Latin word virāgō, Virago is a woman who demonstrates exemplary  and heroic qualities. A popular example of a Virago is Joan of Arc.
+              This name was chosen to signify the hardworking and strong women of the Jinjang Utara community. This name is an ode to their persistance and will to
+              fight for themselves and their community.
             </p>
 
             <p class="font-bold c-white">
 
             </p>
             <p>
-              It'll give you a short burst of energy and then nothing. Motivation is something you use to push through that last rep you're struggling with, not for sticking with a new practice. Thinking of this in terms of motivation is why you have failed in the past.
+              Historically, the concept of a virago reaches back into antiquity where Hellenistic philosophy asserted that elite and exceptionally heroic men had virtus (Greek: ἀνδρεία, translit. andreia).
             </p>
             <p>
-              The problem you're trying to solve is your consistency and your discipline. Motivation isn't going to keep you consistent or disciplined. They're on entirely opposite ends of the spectrum. Instead, create a habit. Do you fail to fill up the gas tank in your car because you don't have the motivation? No.
+              Virtus (once again linked to vir, the brave man abiding by society's highest values and ethics as opposed to homo, human being) defined the traits of excellence for a man in ancient Rome (and Greece), including valor and heroism, but also morality and physical strength. Women and non-elite or unheroic men (slaves, servants, craftsmen, merchants) were considered a lesser category, and believed to be less excellent in Roman morality.
             </p>
-            <p>You fill it up because you know it has to be done. Don't have your level of motivation or desire be what determines whether or not you go to the gym or stick with your diet. Instead, exercise discipline so you can stay consistent. See /r/getdisciplined for more discussion in this area.
+            <p>A woman, however, if exceptional enough could earn the title virago. In doing so, she surpassed the expectations for what was believed possible for her gender, and embodied masculine-like aggression[4] and/or excellence. Virago, then, was a title of respect and admiration.
             </p>
 
           </div>
 
           <div id="answer2" class="tab-pane">
             <h3>
-                                        I feel self-conscious about going to the gym. What do I do?
+                                        How Can I Help?
                                     </h3>
             <p>
-              You are not alone in this feeling. This is a common issue that comes up for people who are just starting on their fitness journey. There are two important things to think about when facing this feeling:
+             Yes you can!
             </p>
 
             <p class="font-bold c-white">
-
+              You can either make a one off <a href="http://127.0.0.1/GitHub/VIRAGO/index.php#get-involved">Donation</a> or <a href="signUp.php" > sign up </a>to post a job.
             </p>
             <p>
-              Everybody was a beginner once. Everyone you see in the gym who is much more strong/muscular/fit than you had to start somewhere, just like you are now. They likely started out somewhere very similar to you and even felt what you are feeling right now.
+              Nothing is too little as all effort helps the Jinjang Utara Community as a whole.
             </p>
-            <p>
-              The majority of people in the gym are much more focused on themselves and their own workout than they are on anything else, including you. If they even notice you at all, they likely view you as just another person who is sharing the same general space and aren't even giving you a second thought, let alone silently judging or laughing at you. If it seems like anyone is staring at or watching you, just assume it's out of encouragement instead of judgement.
-              </p>
-              <p>
-              The best way to get past your fear/nervousness/uncertainty/self-consciousness is to just force yourself to keep the above in mind and just keep going to the gym until it becomes comfortable.
 
-              Here's some additional advice from fitness model Jamie Eason on this subject.
-            </p>
 
           </div>
           <div id="answer3" class="tab-pane">
             <h3>
-                                        Why am I not losing body fat?
+                                        I really want to help!
                                     </h3>
             <p>
-              As it turns out, the expensive thing you (probably) bought to measure your body fat percentage doesn't actually work that well. Consumer grade methods of measuring body fat percentage are not precise or accurate enough to be reliable measures of weight or fat loss.
+              As it turns out, you really can!
             </p>
-
+            <br>
             <p class="font-bold c-white">
+              You can either make a one off <a href="http://127.0.0.1/GitHub/VIRAGO/index.php#get-involved">Donation</a> or <a href="signUp.php" > sign up </a>to post a job.
+            </p>
 
-            </p>
-            <p>
-              A multitude of factors that cannot be effectively controlled outside of a clinical environment can mean your actual body fat percentage is 5% (or more) greater or less than the number you get. Just because you see 20.7% one day and 21.4% the next doesn't mean you actually gained 0.7% bodyfat in a day.
-            </p>
-            <p>
-              You'll unfortunately just have to trust the trend you see on the scale and know without being able to measure it directly that you're losing fat. Unless you have a serious and rare medical issue, if you're losing weight, you can't not be losing fat as part of it.
-            </p>
-            <p>If you want to maximize your results and look your best when you get down to a lower weight, you should make sure to do resistance training to help spare your muscle (and possibly gain a little as well) as you lose weight.
-            </p>
 
           </div>
           <div id="answer4" class="tab-pane">
             <h3>
-                                        Can I lose fat and build muscle at the same time?
+                                        Donations are very welcome!
                                     </h3>
+                                    <br>
             <p>
-              A 2011 paper suggests a weekly rate of body-weight loss of 0.7% can permit muscle gain in both men and women while losing fat mass. Women were also able to increase muscle while losing fat at a weekly rate of body-weight loss of 1.0-1.4%. Men, however, lost muscle mass at this increased rate.
+              You can either make a one off <a href="http://127.0.0.1/GitHub/VIRAGO/index.php#get-involved">Donation</a>
             </p>
 
             <p class="font-bold c-white">
 
-            </p>
-            <p>
-              The ability to gain muscle while losing fat is dependent on the relationship between your fatness and muscularity. An overly-fat and under-trained person will be able to achieve simultaneous fat loss and muscle gain. A very lean person near his/her limit for muscle growth will not. As one moves away from the overly-fat, under-trained status towards a leaner, more muscular body this ability is diminished. At some point, the vast majority of people will see better/quicker results by choosing to do one or the other (gain muscle, lose fat - often referred to as 'bulking' and 'cutting', respectively) at a time. For a highly general rule of thumb: if you have been training effectively for a year or more, you're better off with a bulk/cut cycle. See Lyle McDonald's Adding Muscle While Losing Fat - Q&A for more discussion.
-            </p>
-            <p>
-              In real terms, 0.7% body-weight loss was achieved via a daily deficit of 3.2 calories per lb of total bodyweight (or 7 calories per kg of total bodyweight). At this rate, your goal calorie intake = TDEE - [BWlb x 3.2kcal] (or TDEE - [BWkg x 7kcal]). This is a good place to start. The 1.0-1.4% range works out to a daily deficit of 4.5-6.4 calories per lb of total bodyweight (or 10-14 calories per kg of total bodyweight).
             </p>
 
           </div>
@@ -221,23 +204,23 @@
   <div class= "row">
     <div class="footer-main">
       <div class="col-xs-2 col-sm-2  col-sm-offset-1 footerbrand">
-        <a href="trainer_homepage.php">HELPFit</a>
+        <a href="trainer_homepage.php">Virago</a>
       </div>
     </div>
     <div class=footerlink>
       <div class="col-xs-3 col-sm-3">
-        <a href="trainer_about.php" id="footerlink_1">ABOUT</a>
+        <a href="about.php" id="footerlink_1">ABOUT</a>
       </div>
       <div class="col-xs-3 col-sm-3  col-sm-offset-1">
-        <a href="trainer_contact.php" id="footerlink_2">CONTACT</a>
+        <a href="contact.php" id="footerlink_2">CONTACT</a>
       </div>
       <div class="col-xs-3 col-sm-3  col-sm-offset-2  col-xs-offset-1">
-        <a href="trainer_faqpage.php" id="footerlink_3">FAQ</a>
+        <a href="faqpage.php" id="footerlink_3">FAQ</a>
       </div>
     </div>
     <div class="socialbtn">
       <div class="col-xs-2 col-sm-2 a">
-        <a href="https://www.instagram.com/helpfit.id/?hl=en" class="btn btn-social-icon btn-instagram">
+        <a href="https://www.instagram.com/explore/locations/518534147/help-university/?hl=en" class="btn btn-social-icon btn-instagram">
           <i class="fa fa-instagram"></i>
         </a>
       </div>

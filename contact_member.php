@@ -1,18 +1,19 @@
 <?php
   error_reporting(0);
   session_start();
-  include("config.php");
+   include("BackEnd_Script/DBconfig.php");
 
-  if ( $_SESSION['checkLoginTrainer'] != '1') {
+  if ( $_SESSION['checkLoginMember'] != '1') {
 
           echo '<script language = "javascript">';
           echo 'alert("You have to login first.")';
           echo '</script>';
-          echo  "<script> window.location.assign('login_page.php'); </script>";
+          echo  "<script> window.location.assign('login.php'); </script>";
           exit;
   }
   $fullName = $_SESSION['userFullName'];
   $userID = $_SESSION['user_ID'];
+
 ?>
 <!DOCTYPE html>
 <html >
@@ -51,7 +52,7 @@
           </div>
           <div id="navbar" class="collapse navbar-collapse ">
             <ul class="nav navbar-nav navbar-right">
-              <li ><a href="trainer_homepage.php">Client</a></li>
+              <li ><a href="member_homepage.php">Client</a></li>
               <!--<li><a href="#contact">Contact</a></li>-->
             </ul>
           </div><!--/.nav-collapse -->

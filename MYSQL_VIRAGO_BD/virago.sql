@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 08, 2018 at 11:16 AM
+-- Generation Time: Apr 08, 2018 at 08:37 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 7.0.9
 
@@ -123,7 +123,6 @@ CREATE TABLE `images` (
 --
 -- Dumping data for table `images`
 --
-
 
 -- --------------------------------------------------------
 

@@ -1,0 +1,2 @@
+Exec=gksudo -k -u root /usr/share/atom/atom %U
+

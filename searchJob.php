@@ -1,4 +1,4 @@
-<?php
+                                                                                                                                                                                                                                                              <?php
   error_reporting(0);
   session_start();
   include("BackEnd_Script/DBconfig.php");
@@ -212,13 +212,13 @@
                 </div>
                 <div class=footerlink>
                   <div class="col-xs-3 col-sm-3">
-                    <a href="member_about.php" id="footerlink_1">ABOUT</a>
+                    <a href="about.php" id="footerlink_1">ABOUT</a>
                   </div>
                   <div class="col-xs-3 col-sm-3  col-sm-offset-1">
-                    <a href="member_contact.php" id="footerlink_2">CONTACT</a>
+                    <a href="contact.php" id="footerlink_2">CONTACT</a>
                   </div>
                   <div class="col-xs-3 col-sm-3  col-sm-offset-2  col-xs-offset-1">
-                    <a href="member_faqpage.php" id="footerlink_3">FAQ</a>
+                    <a href="faqpage.php" id="footerlink_3">FAQ</a>
                   </div>
                 </div>
                 <div class="socialbtn">
