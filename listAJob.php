@@ -128,13 +128,13 @@
                       Home
                   </a>
                </li>
-               <li class="active menu-spacing">
+               <li class=" menu-spacing">
                 <a href="trainer_edit_profile.php">
                   <i class="glyphicon glyphicon-pencil"></i>
                     Edit Profile
                 </a>
               </li>
-              <li class="menu-spacing">
+              <li class="active menu-spacing">
                <a href="listAJob.php">
                  <i class="	glyphicon glyphicon-plus-sign"></i>
                    Post a Job
@@ -142,14 +142,10 @@
              </li>
               <!--The id "pageSubmenu" is the sub menu of the View History-->
               <li class="menu-spacing">
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                <a href="clHistory.php">
                   <i class="glyphicon glyphicon-duplicate"></i>
                     View History
                 </a>
-                <ul class="collapse list-unstyled hoversub" id="pageSubmenu">
-                  <li><a href="trainer_history_personal.php">Personal Training Sessions</a></li>
-                  <li><a href="trainer_history_group.php">Group Training Sessions</a></li>
-                </ul>
               </li>
             </ul>
         </nav>
@@ -205,7 +201,7 @@
                             <select name="category" class="form-control input-lg">
                               <option>Select</option>
                               <?php while($rs = $result->fetch_array()){?>
-                              <option value="<?php echo $rs['categoryName']; ?>"><?php echo $rs['categoryName']; ?></option>
+                              <option value="<?php echo $rs['categoryName']; ?>"><?php echo $rs['categoryName'];?></option>
                               <?php } ?>
                             </select>
                           </div>
@@ -217,7 +213,7 @@
                         <div class="form-group">
                           <div class="col-xs-10 col-xs-offset-1 slidecontainer">
                             <p>Number of participants: <span id="demo"></span></p>
-                            <input type="range" min="1" max="100"  class="slider" id="myRange">
+                            <input type="range" name="nplace" min="1" max="30"  class="slider" id="myRange">
                           </div>
                         </div>
                        </div>

@@ -186,7 +186,7 @@
                 <h4 class="id"> ID: <?php echo $rs["JB_UniqueID"];?></h4>
                 <p>Date: <?php echo $rs["stDate"].' TO';?> <span><?php echo $rs["edDate"];?></span> </P>
                 <p>Time: <?php echo $rs["stTime"];?></P>
-                <p>Fee: <?php echo 'RM'.$rs["price"];?></p>
+                <p>Fee: <?php echo 'RM'.$rs["price"].' /Day';?></p>
                 <p>Status: <?php echo $rs["status"];?></p>
 
 
