@@ -130,7 +130,7 @@
            <!-- The menu tabs of the sidebar -->
            <ul class="list-unstyled components ">
              <hr  class="line-sidebar">
-               <li class="menu-spacing">
+               <li class="menu-spacing active">
                   <a href="trainer_homepage.php">
                       <i class="glyphicon glyphicon-home"></i>
                       Home
@@ -149,7 +149,7 @@
                </a>
              </li>
               <!--The id "pageSubmenu" is the sub menu of the View History-->
-              <li class="active menu-spacing">
+              <li class="menu-spacing">
                 <a href="clHistory.php" >
                   <i class="glyphicon glyphicon-duplicate"></i>
                     View Job History
@@ -157,11 +157,10 @@
               </li>
             </ul>
         </nav>
-          <!-- Page Content of the Page -->
-        <div id="content">
+          <!-- Page Content Holder -->
+          <div id="content">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
-                  <!--There will be a button to show and hide the sidebar-->
                     <div class="navbar-header">
                         <button type="button" id="sidebarCollapse" class="navbar-btn ">
                             <span></span>
@@ -192,7 +191,6 @@
                         <th>Time</th>
                         <th>Price</th>
                         <th>Status</th>
-                        <th>Place</th>                        
                         <th><em class="fa fa-cog"></em></th>
                       </tr>
                     </thead>
@@ -212,7 +210,6 @@
                       <td><?php echo $rs["stTime"];?></td>
                       <td><?php echo $rs["price"];?></td>
                       <td><?php echo $rs["status"];?></td>
-                      <td><?php echo $rs["neededPlace"];?></td>
                       <td>
                         <div class="text-center">
                           <button type="submit" name="submit" class="btn btn-default btnEditPer"><em class="fa fa-pencil"></em></button>
@@ -240,13 +237,13 @@
             </div>
             <div class=footerlink>
               <div class="col-xs-3 col-sm-3">
-                <a href="trainer_about.php" id="footerlink_1">ABOUT</a>
+                <a href="about.php" id="footerlink_1">ABOUT</a>
               </div>
               <div class="col-xs-3 col-sm-3  col-sm-offset-1">
-                <a href="trainer_contact.php" id="footerlink_2">CONTACT</a>
+                <a href="contact.php" id="footerlink_2">CONTACT</a>
               </div>
               <div class="col-xs-3 col-sm-3  col-sm-offset-2  col-xs-offset-1">
-                <a href="trainer_faqpage.php" id="footerlink_3">FAQ</a>
+                <a href="faqpage.php" id="footerlink_3">FAQ</a>
               </div>
             </div>
             <div class="socialbtn">

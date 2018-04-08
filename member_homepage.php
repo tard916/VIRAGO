@@ -173,7 +173,7 @@
                           <span><h1>Current and UpComing Jobs</h1></span>
                         </div>
                     </div>
-                    
+
                 </div>
             </nav>
 
@@ -192,14 +192,14 @@
 
                   if ($currentDate <= $dateObj) {
                     # code...
-                  
+
               ?>
               <div class="col-md-4 col-lg-4 popout content-layout">
                 <h3><?php echo $rs["jobTitel"];?></h3>
                 <h5>Title: <?php echo $rs["address"];?></h5>
                 <p>Date: <?php echo $rs["stDate"].' TO';?> <span><?php echo $rs["edDate"];?></span> </P>
                 <p>Time: <?php echo $rs["stTime"];?></P>
-                <p>Fee: <?php echo 'RM'.$rs["price"].' /Day';?></p>              
+                <p>Fee: <?php echo 'RM'.$rs["price"].' /Day';?></p>
                 <!--<p><a class="btn btn-primary" href="trainer_review.php?session_id=<?php //echo $rs['sessionID']; ?>" role="button">Review &raquo;</a></p>-->
               </div>
               <?php
@@ -216,13 +216,13 @@
                 </div>
                 <div class=footerlink>
                   <div class="col-xs-3 col-sm-3">
-                    <a href="member_about.php" id="footerlink_1">ABOUT</a>
+                    <a href="about_member.php" id="footerlink_1">ABOUT</a>
                   </div>
                   <div class="col-xs-3 col-sm-3  col-sm-offset-1">
-                    <a href="member_contact.php" id="footerlink_2">CONTACT</a>
+                    <a href="contact_member.php" id="footerlink_2">CONTACT</a>
                   </div>
                   <div class="col-xs-3 col-sm-3  col-sm-offset-2  col-xs-offset-1">
-                    <a href="member_faqpage.php" id="footerlink_3">FAQ</a>
+                    <a href="faqpage_member.php" id="footerlink_3">FAQ</a>
                   </div>
                 </div>
                 <div class="socialbtn">

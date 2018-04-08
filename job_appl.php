@@ -92,7 +92,7 @@
                         ?>
                       </ul>
                     </div>
-                    <div class="panel-footer"><b>Trainer Name: </b><?php echo $result['firstName'].' '.$result['lastName']?></div>
+                    <div class="panel-footer"><b>Client Name: </b><?php echo $result['firstName'].' '.$result['lastName']?></div>
                   </div>
                 </div>
 

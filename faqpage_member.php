@@ -1,24 +1,25 @@
 <?php
   error_reporting(0);
   session_start();
-  include("config.php");
+   include("BackEnd_Script/DBconfig.php");
 
-  if ( $_SESSION['checkLoginTrainer'] != '1') {
+  if ( $_SESSION['checkLoginMember'] != '1') {
 
           echo '<script language = "javascript">';
           echo 'alert("You have to login first.")';
           echo '</script>';
-          echo  "<script> window.location.assign('login_page.php'); </script>";
+          echo  "<script> window.location.assign('login.php'); </script>";
           exit;
   }
   $fullName = $_SESSION['userFullName'];
   $userID = $_SESSION['user_ID'];
+
 ?>
 <!DOCTYPE html>
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>VIRAGO About Page</title>
+  <title>VIRAGO FAQ Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <!--Bootstrap & Footawesome & Bootrap-social styles-->
@@ -45,28 +46,28 @@
               <span class="icon-bar"></span>
             </button>
             <!--logo button of the website on the top left corner-->
-            <a href="trainer_homepage.php">
+            <a  href="trainer_homepage.php">
               <image src="rec/virago.png" alt="img_logo" id="img_logo_trainer">
             </a>
           </div>
           <div id="navbar" class="collapse navbar-collapse ">
             <ul class="nav navbar-nav navbar-right sign_out_sub">
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="trainer_homepage.php">Client
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="member_homepage.php">Job Seekers
                   </a>
                   <ul class="dropdown-menu">
                     <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Sign Out</a></li>
                   </ul>
                 </li>
-            </ul>
-          </div>
+              </ul>
+            </div>
         </div>
 
       </div>
     </nav>
 
   <div class="row">
-      <div class="panel-heading"><h1>About</h1></div>
+      <div class="panel-heading"><h1>FAQ</h1></div>
   <div class="col-md-4">
 
     <div class="panel-group">
@@ -77,7 +78,7 @@
             <div class="panel-body">
               <p class="font-bold c-white">Support question 1</p>
               <p>
-                OUR STORY.
+                Why the name Virago?
               </p>
             </div>
           </a>
@@ -87,7 +88,7 @@
             <div class="panel-body">
               <p class="font-bold c-white">Support question 2</p>
               <p>
-                OUR PHILOSOPHY.
+                How Can I Help?
               </p>
             </div>
           </a>
@@ -97,7 +98,7 @@
             <div class="panel-body">
               <p class="font-bold c-white">Support question 3</p>
               <p>
-                OUR PHILOSOPHY
+                What Can I do?
               </p>
             </div>
           </a>
@@ -107,7 +108,7 @@
             <div class="panel-body">
               <p class="font-bold c-white">Support question 4</p>
               <p>
-                OUR PHILOSOPHY
+               Do you accept donations?
               </p>
             </div>
           </a>
@@ -124,80 +125,80 @@
         <div class="tab-content">
           <div id="answer1" class="tab-pane active">
             <h3>
-                                       OUR STORY
+             Why was the name Virago chosen?
             </h3>
             <p>
-              VIRAGO came to be as part of the corporate social responsibilty (CSR) of HELP University.
+              Originating from the Latin word virāgō, Virago is a woman who demonstrates exemplary  and heroic qualities. A popular example of a Virago is Joan of Arc.
+              This name was chosen to signify the hardworking and strong women of the Jinjang Utara community. This name is an ode to their persistance and will to
+              fight for themselves and their community.
             </p>
 
             <p class="font-bold c-white">
-              What is VIRAGO?
+
             </p>
             <p>
-              VIRAGO started in 2018 to facilitate a common marketplace for the women in Jinjang Utara and willing job providers. The focus of the website is for Jinjang Utara women to make use of their softskills to perform tasks that is required of them.
+              Historically, the concept of a virago reaches back into antiquity where Hellenistic philosophy asserted that elite and exceptionally heroic men had virtus (Greek: ἀνδρεία, translit. andreia).
             </p>
             <p>
-              There are currently job options that include major job offerings that make full use of the soft sklls that are possessed by women in the Jinjang Utara community.
-              Examples of those jobs include Babysitting, Marketing, Care Giver, Personal Driver and more.
+              Virtus (once again linked to vir, the brave man abiding by society's highest values and ethics as opposed to homo, human being) defined the traits of excellence for a man in ancient Rome (and Greece), including valor and heroism, but also morality and physical strength. Women and non-elite or unheroic men (slaves, servants, craftsmen, merchants) were considered a lesser category, and believed to be less excellent in Roman morality.
             </p>
-            <p>Since it's inception in 2018, there have been an estimated 200,000 bookings with multiple satisfied parties.
+            <p>A woman, however, if exceptional enough could earn the title virago. In doing so, she surpassed the expectations for what was believed possible for her gender, and embodied masculine-like aggression[4] and/or excellence. Virago, then, was a title of respect and admiration.
             </p>
 
           </div>
 
           <div id="answer2" class="tab-pane">
-            <h2>
-                OUR PHILOSOPHY
-            </h2>
-
+            <h3>
+                                        How Can I Help?
+                                    </h3>
+            <p>
+             Yes you can!
+            </p>
 
             <p class="font-bold c-white">
-              Corporate PHILOSOPHY
+              You can either make a one off <a href="http://127.0.0.1/GitHub/VIRAGO/index.php#get-involved">Donation</a> or <a href="signUp.php" > sign up </a>to post a job.
             </p>
             <p>
-              Our corporate philosophy at HELP is that of inclusivity and empowerment. This is why the VIRAGO project was commisioned to empower, enrich and enlarge the livelihood of the women in the Jinjang Utara Community.
+              Nothing is too little as all effort helps the Jinjang Utara Community as a whole.
             </p>
-            <p>
-              This is what has motivated the creation of the VIRAGO project.
-            </p>
+
 
           </div>
           <div id="answer3" class="tab-pane">
-             <h2>
-                OUR PHILOSOPHY
-            </h2>
-
-
+            <h3>
+                                        I really want to help!
+                                    </h3>
+            <p>
+              As it turns out, you really can!
+            </p>
+            <br>
             <p class="font-bold c-white">
-              Corporate PHILOSOPHY
+              You can either make a one off <a href="http://127.0.0.1/GitHub/VIRAGO/index.php#get-involved">Donation</a> or <a href="signUp.php" > sign up </a>to post a job.
             </p>
-            <p>
-              Our corporate philosophy at HELP is that of inclusivity and empowerment. This is why the VIRAGO project was commisioned to empower, enrich and enlarge the livelihood of the women in the Jinjang Utara Community.
-            </p>
-            <p>
-              This is what has motivated the creation of the VIRAGO project.
-            </p>
+
 
           </div>
           <div id="answer4" class="tab-pane">
-            <h2>
-                OUR PHILOSOPHY
-            </h2>
-
+            <h3>
+                                        Donations are very welcome!
+                                    </h3>
+                                    <br>
+            <p>
+              You can either make a one off <a href="http://127.0.0.1/GitHub/VIRAGO/index.php#get-involved">Donation</a>
+            </p>
 
             <p class="font-bold c-white">
-              Corporate PHILOSOPHY
+
             </p>
-            <p>
-              Our corporate philosophy at HELP is that of inclusivity and empowerment. This is why the VIRAGO project was commisioned to empower, enrich and enlarge the livelihood of the women in the Jinjang Utara Community.
-            </p>
-            <p>
-              This is what has motivated the creation of the VIRAGO project.
-            </p>
+
           </div>
         </div>
+
+
       </div>
+
     </div>
+
   </div>
 </div>
 <footer class="footer-hide-show">
@@ -220,7 +221,7 @@
     </div>
     <div class="socialbtn">
       <div class="col-xs-2 col-sm-2 a">
-        <a href="https://www.instagram.com/helpfit.id/?hl=en" class="btn btn-social-icon btn-instagram">
+        <a href="https://www.instagram.com/explore/locations/518534147/help-university/?hl=en" class="btn btn-social-icon btn-instagram">
           <i class="fa fa-instagram"></i>
         </a>
       </div>
