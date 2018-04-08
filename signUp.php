@@ -1,3 +1,7 @@
+<?php
+    include 'BackEnd_Script/DBConfig.php';
+    $result = $con->query("SELECT * FROM category");
+?>  
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -26,57 +30,55 @@
       <div class="tab-content">
         <div id="signup">   
           <h1>Sign Up As Job Seekers</h1>
-          
+
+                   
           <form action="BackEnd_Script/viragoReistration.php" method="POST" name="JobSeekers" >
 
             <div class="top-row">
-              <div class="field-wrap">
-                
+              <div class="field-wrap">                
                 <input id="fname" type="text" name="firstName"  autocomplete="off" placeholder="First Name*" required />
               </div>
           
-              <div class="field-wrap">
-                
+              <div class="field-wrap">                
                 <input id="lname" type="text" name="lastName"  autocomplete="off" placeholder="Last Name*" required />
               </div>
             </div>
 
-            <div class="field-wrap">
-             
+            <div class="field-wrap">             
               <input id="email" type="email" name="email"  autocomplete="off" placeholder="Email*" required/>
             </div>
             
-            <div class="field-wrap">
-              
+            <div class="field-wrap">              
               <input id="pass" type="password" name="password"  autocomplete="false" placeholder="Password*" required/>
             </div>
 
-            <div class="field-wrap">
-              
+            <div class="field-wrap">              
               <input id="Phn" type="password" name="password1"  autocomplete="off" placeholder="Phone Number*" required/>
             </div>     
 
-            <div class="field-wrap">
-              
+            <div class="field-wrap">              
               <input id="addr" type="text" name="address"  autocomplete="off" placeholder="Address*" required/>
             </div>
 
-            <div class="field-wrap">
-              
+            <div class="field-wrap">              
               <input id="Phnumber" type="text" name="phone"  autocomplete="off" placeholder="Phone Number*" required/>
             </div>
             
 
             <div class="field-wrap">
-              
-              <input id="speci" type="text" name="specialty"  autocomplete="off" placeholder="Specialty*" required/>
+              <select name="specialty">
+                <option>Specialty</option>
+                <?php while($rsc = $result->fetch_array()){?>
+                <option value="<?php echo $rsc['categoryName']; ?>"><?php echo $rsc['categoryName']; ?></option>
+                <?php } ?>              
+              </select>              
+             
             </div>
             
             <button type="submit" name="jobSeeker_submit" class="button button-block"/>SIGN UP</button>
             <a href="index.php" class="button btn-cancel ">CANCEL</a>
 
           </form>
-
         </div>
         
         <div id="login">   

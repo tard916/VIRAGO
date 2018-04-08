@@ -130,7 +130,7 @@
            <!-- The menu tabs of the sidebar -->
            <ul class="list-unstyled components ">
              <hr  class="line-sidebar">
-               <li class="menu-spacing active">
+               <li class="menu-spacing">
                   <a href="trainer_homepage.php">
                       <i class="glyphicon glyphicon-home"></i>
                       Home
@@ -149,7 +149,7 @@
                </a>
              </li>
               <!--The id "pageSubmenu" is the sub menu of the View History-->
-              <li class="menu-spacing">
+              <li class="active menu-spacing">
                 <a href="clHistory.php" >
                   <i class="glyphicon glyphicon-duplicate"></i>
                     View Job History
@@ -157,10 +157,11 @@
               </li>
             </ul>
         </nav>
-          <!-- Page Content Holder -->
-          <div id="content">
+          <!-- Page Content of the Page -->
+        <div id="content">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
+                  <!--There will be a button to show and hide the sidebar-->
                     <div class="navbar-header">
                         <button type="button" id="sidebarCollapse" class="navbar-btn ">
                             <span></span>
@@ -190,7 +191,8 @@
                         <th>End Date</th>
                         <th>Time</th>
                         <th>Price</th>
-                        <th>Status</th>                        
+                        <th>Status</th>
+                        <th>Place</th>                        
                         <th><em class="fa fa-cog"></em></th>
                       </tr>
                     </thead>
@@ -210,6 +212,7 @@
                       <td><?php echo $rs["stTime"];?></td>
                       <td><?php echo $rs["price"];?></td>
                       <td><?php echo $rs["status"];?></td>
+                      <td><?php echo $rs["neededPlace"];?></td>
                       <td>
                         <div class="text-center">
                           <button type="submit" name="submit" class="btn btn-default btnEditPer"><em class="fa fa-pencil"></em></button>

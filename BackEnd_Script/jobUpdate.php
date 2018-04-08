@@ -13,6 +13,9 @@
 	$price = $_POST['price'];
 	$ID = $_SESSION['user_ID'];
 	$nplace = $_POST['nplace'];
+	$jbID = $_SESSION['PrSessionUpdate'];
+	$status = $_POST['status'];
+	
 	//echo $stDate;
 	//echo $today_date;
 	$dateTimestamp1 = date_create($today_date);
@@ -43,21 +46,19 @@
 				echo '<script language = "javascript">';
 				echo 'alert("Invalid date you cannot post a jost with the past Date!!!")';
 				echo '</script>';
-				echo  "<script> window.location.assign('../listAJob.php'); </script>";
+				echo  "<script> window.location.assign('../clHistory.php'); </script>";
 			}else{
 
 				if ($diff3->format('%r%d ') >= 0 ) {
 
-					$sql = "INSERT INTO jobs (jobTitel, address, category, price,
-					 stDate, edDate, stTime,neededPlace, JB_UniqueID,CL_UniqueID) VALUES ('$jobtitel','$address',
-					 '$category','$price','$stDate','$edDate','$stTime','$nplace','$uniqueID','$ID')";
+					$sql = "UPDATE jobs SET jobTitel ='$jobtitel', address ='$address',category ='$category',price ='$price',stDate ='$stDate',edDate ='$edDate',stTime ='$stTime',neededPlace ='$nplace', status ='$status' WHERE JB_UniqueID = '$jbID'";
 
 					if ($con->query($sql) == TRUE && mysqli_affected_rows($con) >0){
 
 						echo '<script language = "javascript">';
 						echo 'alert("Record Added successfully")';
 						echo '</script>';
-						echo  "<script> window.location.assign('../trainer_homepage.php'); </script>";
+						echo  "<script> window.location.assign('../clHistory.php'); </script>";
 					}
 					else
 					{
@@ -71,7 +72,7 @@
 					echo '<script language = "javascript">';
 					echo 'alert("Endding Date must not be a past date!")';
 					echo '</script>';
-					echo  "<script> window.location.assign('../listAJob.php'); </script>";
+					echo  "<script> window.location.assign('../clHistory.php'); </script>";
 				}
 			
 			}		
@@ -83,7 +84,7 @@
 			echo '<script language = "javascript">';
 			echo 'alert("All the field most be completed")';
 			echo '</script>';
-			echo  "<script> window.location.assign('../listAJob.php'); </script>";		
+			echo  "<script> window.location.assign('../clHistory.php'); </script>";		
 		}
 	} 
 	$con->close();

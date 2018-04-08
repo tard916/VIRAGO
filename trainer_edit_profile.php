@@ -142,14 +142,10 @@
              </li>
               <!--The id "pageSubmenu" is the sub menu of the View History-->
               <li class="menu-spacing">
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                <a href="clHistory.php">
                   <i class="glyphicon glyphicon-duplicate"></i>
                     View History
                 </a>
-                <ul class="collapse list-unstyled hoversub" id="pageSubmenu">
-                  <li><a href="trainer_history_personal.php">Personal Training Sessions</a></li>
-                  <li><a href="trainer_history_group.php">Group Training Sessions</a></li>
-                </ul>
               </li>
             </ul>
         </nav>
