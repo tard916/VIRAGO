@@ -179,9 +179,18 @@
               -->
               <?php
                   $specialty = $_POST['search'];
-                  $result = $con->query("SELECT * FROM jobs ");
+                  $st = 'available';
+                  $result = $con->query("SELECT * FROM jobs WHERE status='$st'");
 
                   foreach ($result as $key => $rs) {
+
+                    $dateSt = new DateTime($rs['stDate']);
+                    $dateEd = new DateTime($rs['edDate']);
+                  $currentDate = new DateTime(); 
+
+                  if ($currentDate <= $dateSt and $currentDate < $dateEd) {
+                    
+                 
 
               ?>
               <div class="col-md-4 col-lg-4 popout content-layout">
@@ -194,6 +203,7 @@
                 <p><a class="btn btn-primary" href="job_appl.php?JB_UniqueID=<?php echo $rs['JB_UniqueID']; ?>" role="button">View &raquo;</a></p>
               </div>
               <?php
+                   }
                 }
               ?>
             </div>

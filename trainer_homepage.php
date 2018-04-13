@@ -2,6 +2,10 @@
   error_reporting(0);
   session_start();
   include("BackEnd_Script/DBconfig.php");
+  $fullName = $_SESSION['userFullName'];
+  $userID = $_SESSION['user_ID'];
+  $status='available';
+  $updateSta='completed';
 
   if ( $_SESSION['checkLoginTrainer'] != '1') {
 
@@ -10,10 +14,21 @@
           echo '</script>';
           echo  "<script> window.location.assign('login.php'); </script>";
           exit;
-  }
-  $fullName = $_SESSION['userFullName'];
-  $userID = $_SESSION['user_ID'];
+  }else{
+    $chekDate = $con->query("SELECT * FROM jobs WHERE status = '$status'");
+    foreach ($chekDate as $key => $rs) {
 
+        $dateSt = new DateTime($rs['stDate']);
+        $dateEd = new DateTime($rs['edDate']);
+        $jID = $rs['JB_UniqueID'];
+      $currentDate = new DateTime(); 
+
+      if ($currentDate > $dateEd) {
+       $closeJob=$con->query("UPDATE jobs SET status='$updateSta' WHERE JB_UniqueID='$jID'");
+      }
+    }
+  }
+  
   //echo $userID;
 ?>
 <!DOCTYPE html>

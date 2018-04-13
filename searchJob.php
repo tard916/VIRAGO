@@ -185,7 +185,7 @@
               -->
               <?php
                   $specialty = $_POST['search'];
-                  $result = $con->query("SELECT * FROM jobs where category like '$specialty%' ");
+                  $result = $con->query("SELECT * FROM jobs where category like '$specialty%' AND status='available'");
 
                   foreach ($result as $key => $rs) {
 

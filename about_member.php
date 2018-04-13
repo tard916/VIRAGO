@@ -201,7 +201,7 @@
     </div>
   </div>
 </div>
-<footer class="footer-hide-show">
+<footer class="footer fixed-bottom">
   <div class= "row">
     <div class="footer-main">
       <div class="col-xs-2 col-sm-2  col-sm-offset-1 footerbrand">

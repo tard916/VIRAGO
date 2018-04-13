@@ -54,7 +54,7 @@
     </nav>
 
 		<div class="box col-xs-10 col-xs-offset-1 ">
-		  <a href="member_history.php" class="arrow"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
+		  <a href="listedJobs.php" class="arrow"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></a>
 			<h1>Apply For <?php echo $result['jobTitel']?>.</h1>
       <hr>
 			<div class="midBox">
@@ -116,9 +116,19 @@
 							        </div>-->
 				              <div class="row">
 				                <div>
-				                  <label>Comment</label>
+				                  <label>Client Information</label>
 				                </div>
 				              </div>
+                      <div class="row">
+                        <div>
+                          <label><?php echo $result['firstName'].' '.$result['lastName']?></label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div>
+                          <label><?php echo $result['phone']?></label>
+                        </div>
+                      </div>
 							        <div class="row content-box">
 								        <div class="form-group">
 									        <div>
